@@ -12,8 +12,7 @@
 
 Nascido da urgência em substituir o caos por eficiência, o Pulso surge para transformar a gestão de plantões dentro das instituições de saúde. Em um cenário marcado por falhas de comunicação, retrabalhos e rotinas estressantes, a plataforma propõe uma gestão precisa, humana e centralizada, eliminando inconsistências e garantindo que a operação reflita um propósito maior: o cuidado.
 
-Mais do que organizar horários, o Pulso moderniza a relação entre gestão e médicos por meio de uma plataforma digital estruturada em dois módulos complementares: o do gestor médico, que centraliza escalas, aprova solicitações em tempo real, gerencia substituições e monitora o banco de horas coletivo, e o do médico, que oferece uma agenda integrada com disponibilidade personalizada, ferramentas para solicitar trocas com colegas e visibilidade total dos seus plantões, tudo aliado a 
-notificações automáticas e um calendário interativo. Afinal, a saúde não se improvisa — constrói-se com planejamento, tecnologia e uma ponte entre o caos diário e a excelência no atendimento.
+Mais do que organizar horários, o Pulso moderniza a relação entre gestão e médicos por meio de uma plataforma digital estruturada em dois módulos complementares: o do gestor médico, que centraliza escalas, aprova solicitações em tempo real, gerencia substituições e monitora o banco de horas coletivo, e o do médico, que oferece uma agenda integrada com disponibilidade personalizada, visibilidade total dos seus plantões e acesso a novas oportunidades alinhadas ao seu interesse, além de ferramentas para solicitar trocas com colegas e notificações automáticas. Afinal, a saúde não se improvisa — constrói-se com planejamento, tecnologia e uma ponte entre o caos diário e a excelência no atendimento.
 
 ## 2. Descrição do problema
 
