@@ -77,19 +77,20 @@ O sistema também contempla funcionalidades de personalização e automação, c
 | **RF01** | Médico | Feed de Plantões Disponíveis | O médico pode visualizar plantões disponíveis em um feed dinâmico, filtrados por localização, raio de interesse e hospitais favoritos, com destaque para plantões urgentes. | Alta |
 | **RF02** | Médico | Interesse em Plantão | O médico pode demonstrar interesse em um plantão específico com apenas um clique, facilitando a seleção pelo gestor. | Alta |
 | **RF03** | Médico | Lista Pessoal de Plantões | O médico tem acesso à sua agenda de plantões já confirmados, organizada em lista ou calendário. | Alta |
-| **RF04** | Médico | Cancelamento de Plantão | O médico pode solicitar o cancelamento de um plantão atribuído, informando o motivo e, preferencialmente, indicando um substituto. | Alta |
+| **RF04** | Médico | Repassar Plantão | O médico pode disponibilizar um plantão previamente assumido para que outros médicos o peguem, podendo inclusive oferecer bonificação como incentivo. | Alta |
 | **RF05** | Médico | Troca de Plantão entre Médicos | Um médico pode negociar diretamente com outro colega a troca de plantões. Após acordo, a troca é registrada no sistema e o gestor é apenas notificado. | Alta |
-| **RF06** | Médico | Oferecer Plantão | O médico pode disponibilizar um plantão previamente assumido para que outros médicos o peguem, podendo inclusive oferecer bonificação como incentivo. | Alta |
+| **RF06** | Médico | Confirmação de Presença | O médico pode confirmar sua presença no início do plantão pelo sistema, registrando data e horário. | Baixa |
 | **RF07** | Médico | Locais Favoritos e Bloqueados | O médico pode marcar hospitais ou regiões como favoritos e bloquear locais onde não deseja atuar, ajustando o feed de oportunidades. | Média |
 | **RF08** | Médico | Calendário Pessoal | O médico possui um calendário que exibe visualmente seus plantões confirmados e anotações. | Média |
 | **RF09** | Médico | Relatórios e Estatísticas | O médico pode acessar relatórios simples sobre seus plantões, incluindo quantidade realizada, valores a receber e comparativos mensais, com opção de gamificação entre colegas. | Baixa |
-| **RF10** | Médico | Integração com Google Agenda | O médico pode exportar automaticamente seus plantões confirmados para o Google Agenda. | Baixa |
-| **RF11** | Gestão | Criação e Edição de Escalas | O gestor pode criar e organizar escalas de plantão, definir horários, atribuir médicos e editar informações de plantões já cadastrados. | Alta |
-| **RF12** | Gestão | Envio de Oportunidades | O gestor pode enviar plantões disponíveis diretamente para médicos parceiros ou disponibilizá-los no feed geral. | Alta |
-| **RF13** | Gestão | Lista de Médicos Parceiros | O gestor mantém uma lista de médicos parceiros, podendo priorizar o envio de oportunidades apenas para eles. | Alta |
-| **RF14** | Gestão | Visualização de Cobertura | O gestor pode visualizar a ocupação das escalas, identificar setores com déficit de médicos e acompanhar a distribuição dos plantões. | Média |
-| **RF15** | Sistema | Notificações e Alertas | O sistema envia notificações sobre eventos importantes, como novos plantões disponíveis, atribuição, trocas ou cancelamentos, garantindo que médicos e gestores fiquem sempre atualizados. | Alta |
-| **RF16** | Médico / Gestão | Perfis de Usuário |    Cada usuário possui um perfil contendo informações pessoais e profissionais (nome, especialidade, ano de formação, Pix). Gestores podem acessar os perfis dos médicos colaboradores. | Alta |
+| **RF10** | Médico | Acesso a Escalas | O médico pode visualizar a escala completa de plantões organizada pelo gestor, incluindo plantões próprios, de colegas e os que ainda estão disponíveis para repasse ou troca. | Alta |
+| **RF11** | Médico | Integração com Google Agenda | O médico pode exportar automaticamente seus plantões confirmados para o Google Agenda. | Baixa |
+| **RF12** | Gestão | Criação e Edição de Escalas | O gestor pode criar e organizar escalas de plantão, definir horários, atribuir médicos e editar informações de plantões já cadastrados. | Alta |
+| **RF13** | Gestão | Envio de Oportunidades | O gestor pode enviar plantões disponíveis diretamente para médicos parceiros ou disponibilizá-los no feed geral. | Alta |
+| **RF14** | Gestão | Lista de Médicos Parceiros | O gestor mantém uma lista de médicos parceiros, podendo priorizar o envio de oportunidades apenas para eles. | Alta |
+| **RF15** | Gestão | Visualização de Cobertura | O gestor pode visualizar a ocupação das escalas, identificar setores com déficit de médicos e acompanhar a distribuição dos plantões. | Média |
+| **RF16** | Sistema | Notificações e Alertas | O sistema envia notificações sobre eventos importantes, como novos plantões disponíveis, atribuição, trocas ou cancelamentos, garantindo que médicos e gestores fiquem sempre atualizados. | Alta |
+| **RF17** | Médico / Gestão | Perfis de Usuário |    Cada usuário possui um perfil contendo informações pessoais e profissionais (nome, especialidade, ano de formação, Pix). Gestores podem acessar os perfis dos médicos colaboradores. | Alta |
 
 
 ## 9. Requisitos não-funcionais
