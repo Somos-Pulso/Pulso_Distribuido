@@ -102,17 +102,14 @@ O sistema também contempla funcionalidades de personalização e automação, c
 | RNF03   | Proteção de Dados Sensíveis   | Dados pessoais, médicos e de plantões devem ser armazenados e transmitidos de forma segura, seguindo práticas de segurança modernas.| Segurança         | Obrigatório    |
 | RNF04   | Padronização de Ambiente      | O sistema deve ser dockerizado para padronizar o ambiente de desenvolvimento, testes e produção.                                                      | Infraestrutura    | Obrigatório    |
 | RNF05   | Registro e Rastreabilidade de Ações  | O sistema deve manter logs de erro e registrar todas as ações sensíveis (como trocas de plantão, alterações na escala) para garantir rastreabilidade e segurança jurídica. | Auditoria e Segurança	    | Desejável      |
-| RNF06   | Escalabilidade                 | A arquitetura deve permitir crescimento modular sem reescrever a base do sistema.                                                                    | Manutenibilidade  | Desejável      |
-| RNF07   | Compatibilidade Cross-Browser | O sistema deve funcionar corretamente nos navegadores mais utilizados (Chrome, Firefox, Edge, Safari).                                                | Usabilidade       | Obrigatório    |
-| RNF08   | Mensagens de Erro Amigáveis   | O sistema deve apresentar mensagens de erro claras e orientadas ao usuário, sem exibir informações técnicas como stacktraces. Exemplo: "Erro ao salvar plantão. Tente novamente ou contate o suporte." | Usabilidade       | Obrigatório    |
-
+| RNF06   | Compatibilidade Cross-Browser | O sistema deve funcionar corretamente nos navegadores mais utilizados (Chrome, Firefox, Edge, Safari).                                                | Usabilidade       | Obrigatório    |
+| RNF07   | Mensagens de Erro Amigáveis   | O sistema deve apresentar mensagens de erro claras e orientadas ao usuário, sem exibir informações técnicas como stacktraces. Exemplo: "Erro ao salvar plantão. Tente novamente ou contate o suporte." | Usabilidade       | Obrigatório    |
 ## 10. Stack de Tecnologias
 
 | Categoria             | Tecnologia      | Descrição                                                                                                                                                        |
 |------------------------|------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Backend**            | Python            | Linguagem principal escolhida por sua clareza, produtividade e ampla adoção no mercado, sendo base para o framework utilizado. |
-| **Framework Backend**  | Django            | Framework web robusto, escolhido porque toda a equipe já possui domínio sobre ele, acelerando o desenvolvimento, reduzindo curva de aprendizado e aumentando a eficiência geral. |
-| **Banco de Dados**     | PostgreSQL        | Banco de dados relacional robusto, selecionado para lidar com grandes volumes de dados, transações críticas e escalabilidade futura, superando limitações do SQLite. |
-| **Frontend**           | HTML e CSS        | Utilizados para a estruturação semântica e estilização responsiva das interfaces, focando em acessibilidade, desempenho e experiência do usuário. |
-| **Frontend**           | JavaScript        | Linguagem voltada à criação de interfaces dinâmicas, responsivas e integração assíncrona com o backend. |
-| **Infraestrutura**     | Docker            | Plataforma de conteinerização utilizada para padronizar ambientes, isolar dependências e facilitar o desenvolvimento, testes e deploys consistentes no futuro. |
+| **Backend**            | java           | Linguagem principal escolhida por sua robustez, segurança, eficiencia e ampla adoção no mercado corporativo, sendo base para o framework utilizado. |
+| **Framework Backend**  | Spring Boot    | Framework web robusto, corporativo e com ferramentas avançadas que ajudarão a garantir segurança e eficiencia por ser um sistema na area de saude. |
+| **Banco de Dados**     | PostgreSQL     | Banco de dados relacional robusto, selecionado para lidar com grandes volumes de dados, transações críticas e escalabilidade futura, superando limitações do SQLite. |
+| **Frontend**           | Angular        | framework voltada à criação de interfaces dinâmicas, responsivas e integração com o backend, escolhido por sua robustez e boa arquitetura.|
+| **Infraestrutura**     | Docker         | Plataforma de conteinerização utilizada para padronizar ambientes, isolar dependências e facilitar o desenvolvimento, testes e deploys consistentes no futuro. |
