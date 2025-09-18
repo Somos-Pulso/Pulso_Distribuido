@@ -75,7 +75,7 @@ O sistema também contempla funcionalidades de personalização e automação, c
 | **Código** | **Ator** | **Nome** | **Descrição** | **Prioridade** |
 |:----------:|:--------:|:--------:|:-------------:|:--------------:|
 | **RF01**  | Gestão | Criação de Escala de Plantões | Para a criação de uma nova escala, o gestor pode optar por reutilizar um modelo de escala anterior ou iniciar uma do zero. Após definir o nome, setor e período da escala, ele pode cadastrar os plantões correspondentes, informando os horários e designando os médicos responsáveis. | Alta |
-| **RF02**  | Médico | Consultar Plantões | O médico pode visualizar seus próprios plantões e consultar oportunidades disponíveis, com informações completas e filtradas por interesse e localização. | Alta |
+| **RF02**  | Médico | Consultar Plantões | O médico pode visualizar seus próprios plantões e consultar oportunidades disponíveis, com informações completas e filtradas por interesse e localização, organizados visualmente por ordem de urgência. | Alta |
 | **RF03**  | Médico / Gestão | Visualizar Oportunidades de Plantão | Quando um plantão está vago, ele é disponibilizado como oportunidade extra para os médicos, que podem visualizar e demonstrar interesse em assumir. | Alta |
 | **RF04**  | Médico | Cancelamento de Plantão | O médico pode solicitar o cancelamento de um plantão atribuído, informando o motivo e, preferencialmente, indicando um substituto. O pedido é analisado pelo gestor. Cancelamentos frequentes ou sem justificativa impactam a confiança e reduzem futuras oportunidades. | Alta |
 | **RF05**  | Médico | Troca de Plantão entre Médicos | Um médico pode negociar diretamente com outro colega a troca de plantões. Após acordo, a troca é registrada no sistema e o gestor é notificado, sem necessidade de aprovação. | Alta |
@@ -84,6 +84,8 @@ O sistema também contempla funcionalidades de personalização e automação, c
 | **RF08**  | Médico / Gestão | Calendário Pessoal | Cada usuário possui um calendário pessoal que exibe visualmente seus plantões, anotações e lembretes, funcionando como uma agenda. Sem funções de controle direto, o calendário serve como uma visão central e organizada da rotina. | Média |
 | **RF09**  | Médico / Gestão | Visualização de Perfil | Médicos e gestores possuem perfis individuais no sistema, contendo informações pessoais e profissionais. Os médicos podem visualizar dados como especialidade, função e disponibilidade de horários. Os gestores, além de visualizarem seus próprios perfis institucionais e seus dados, também têm acesso aos perfis dos médicos. | Alta |
 | **RF10**  | Médico | Relatórios e Estatísticas | O médico pode acessar relatórios simples sobre seus plantões, incluindo quantidade realizada, valores a receber e comparativos mensais. Esses dados também podem ser usados para gamificação entre colegas. | Baixa |
+| **RF11**  | Médico | Interesse em Plantão | O médico pode demonstrar interesse em um plantão específico com apenas um clique, facilitando a seleção pelo gestor. | Alta |
+| **RF12**  | Médico | Lista de Locais Bloqueados | O médico pode manter uma lista pessoal de locais onde não deseja trabalhar, e essas oportunidades deixam de ser exibidas no feed. | Baixa |
 
 ## 9. Requisitos não-funcionais
 
