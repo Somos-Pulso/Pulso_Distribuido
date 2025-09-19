@@ -25,13 +25,14 @@ Mais do que organizar horários, o Pulso moderniza a relação entre gestão e m
 
 ## 3. Descrição dos usuários
 
-| **Nome**            | **Descrição**                                                                 | **Responsabilidade**                                                                                     |  
-|----------------------|-------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------|  
-| **Gestor de Plantão** | Profissional responsável pela organização operacional das escalas, alocação de equipes e garantia da cobertura adequada dos plantões. | - Definir e ajustar escalas de acordo com demandas e disponibilidades;<br>- Monitorar cumprimento de jornadas e carga horária;<br>- Analisar dados para otimizar alocações;<br>- Mediar comunicação entre equipes. |  
-| **Médico**           | Profissional da linha de frente, envolvido diretamente nos plantões e atendimentos, com rotina dinâmica e jornadas intensas. | - Consultar escalas e oportunidades de plantão em tempo real, filtradas por interesse e localidade;<br>- Demonstrar interesse ou confirmar presença em plantões disponíveis;<br>- Solicitar trocas de plantão ou ajustes de horário com colegas;<br>- Comunicar-se diretamente com gestores e outros médicos sobre disponibilidade e substituições;<br>- Gerenciar favoritos, evitar locais indesejados e acompanhar histórico de plantões. |  
+| **Nome** | **Descrição** | **Responsabilidade** |  
+|----------|---------------|----------------------|  
+| **RH** | Setor administrativo responsável pela habilitação do uso da plataforma, gestão de acessos e vinculação dos profissionais | - Realizar cadastro dos líderes de escala;<br> - Vincular profissionais parceiros e cooperados;<br> - Gerenciar permissões e acessos conforme papéis;<br> - Garantir que apenas usuários autorizados utilizem as principais funcionalidades da plataforma.
+| **Líder de Escala** | Profissional responsável pela criação e gestão das escalas mensais, definição de plantões fixos, publicação de oportunidades e garantia do cumprimento das normas trabalhistas. | - Criar e ajustar escalas de acordo com demandas e disponibilidades;<br> - Inserir plantões vagos e disponibilizá-los como oportunidades;<br> - Monitorar cumprimento de jornadas e carga horária;<br> - Mediar comunicação entre equipes. |  
+| **Profissional de Saúde** | Médico ou parceiro (CLT, PJ) que atua diretamente nos plantões, buscando praticidade no acesso às informações e autonomia na gestão de sua agenda. | - Consultar escalas e plantões atribuídos ou disponíveis;<br> - Demonstrar interesse, confirmar presença e solicitar trocas ou repasses;<br> - Definir locais de preferência ou bloqueio;<br> - Receber notificações personalizadas de novas oportunidades;<br> - Acompanhar relatórios, agenda e histórico de plantões. |  
 
 **Observação:**  
-*Ambos os usuários enfrentam desafios com ferramentas desconexas (WhatsApp, planilhas), mas buscam eficiência e clareza. A plataforma unifica suas necessidades: enquanto o gestor prioriza controle estratégico, o médico valoriza acesso rápido e redução de burocracia.*  
+*Todos os usuários enfrentam desafios com ferramentas desconexas (grupos de mensagens, planilhas), mas buscam eficiência e clareza. A plataforma unifica suas necessidades: o RH garante governança e controle, o líder de escala prioriza gestão estratégica e conformidade, e o profissional valoriza acesso rápido, autonomia e redução de burocracia.*  
 
 ## 4. Descrição do ambiente dos usuários
 
