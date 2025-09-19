@@ -65,11 +65,17 @@ Nosso projeto tem como concorrentes o Shosp, o CMG Escala, o Conecta Saúde, o B
 
 ## 7. Visão geral do produto
 
-O sistema tem como foco ser uma solução digital integrada e moderna que organize e facilite a administração de escalas médicas em instituições públicas e privadas de saúde. Seu principal objetivo é otimizar a rotina dos gestores e médicos plantonistas, promovendo uma comunicação eficiente, maior transparência na gestão de horários e decisões mais assertivas no processo de alocação de plantões.
-A plataforma é composta por módulos distintos, voltados aos diferentes perfis de usuários: gestores de plantões e médicos, cada um com funcionalidades específicas, mas integradas de forma a garantir fluidez e confiabilidade nas operações.
-Para os gestores, o sistema oferece recursos como a criação e edição de escalas, substituições emergenciais, análise de performance e tomada de decisão. Também estão disponíveis ferramentas de comunicação como notificações e bate papo integrado. Esses recursos permitem uma administração proativa, ágil e transparente.
-Já os médicos contam com um ambiente digital que centraliza sua agenda de plantões, acesso a novas oportunidades filtradas por interesse e localidade, notificações em tempo real, pedidos e aceite de trocas, visualização de ganhos e horas trabalhadas. Tal módulo promove autonomia e organização pessoal, respeitando preferências individuais e proporcionando maior equilíbrio entre vida profissional e pessoal.
-O sistema também contempla funcionalidades de personalização e automação, como sugestões inteligentes de plantões com base em preferências e metas, acompanhamento de indicadores de desempenho e um calendário interativo. A combinação desses elementos garante uma gestão moderna, colaborativa e humanizada dos plantões médicos, reduzindo conflitos de escala, fortalecendo o vínculo entre gestão e equipe médica e promovendo a eficiência operacional nas instituições de saúde.
+O sistema tem como foco ser uma solução digital integrada e moderna que organize e facilite a administração de escalas em instituições públicas e privadas de saúde. Seu principal objetivo é otimizar a rotina dos líderes de escala e profissionais de saúde plantonistas, promovendo uma comunicação eficiente, maior transparência na gestão de horários e decisões mais assertivas no processo de alocação de plantões.
+
+A plataforma é composta por módulos distintos, voltados aos diferentes perfis de usuários: RH, líderes de escala e profissionais de saúde. Cada módulo contempla funcionalidades específicas, mas todos se integram para garantir fluidez, confiabilidade e alinhamento das operações.
+
+Para o RH, o sistema disponibiliza ferramentas de governança e administração de acessos, permitindo o cadastro de líderes de escala, a vinculação de profissionais parceiros (empresas privadas) e cooperados (cooperativas), além do gerenciamento de permissões. Esse módulo garante que apenas usuários autorizados tenham acesso ao sistema, assegurando confiabilidade e organização desde a base da operação.
+
+Para os líderes de escala, o sistema oferece recursos como a criação e edição de escalas mensais, definição de plantões fixos, publicação de oportunidades, acompanhamento de jornadas e alertas automáticos em caso de violações trabalhistas. Esses recursos permitem uma administração proativa, ágil e em conformidade com normas, reduzindo erros e retrabalhos.
+
+Já os profissionais de saúde contam com um ambiente digital que centraliza sua agenda de plantões, acesso a novas oportunidades alinhadas a preferências e locais de atuação, confirmação de presença, pedidos e aceite de trocas e repasses. Tal módulo promove autonomia e organização pessoal, respeitando individualidades e proporcionando maior equilíbrio entre vida profissional e pessoal.
+
+O sistema também contempla funcionalidades de personalização e automação, como notificações inteligentes, preferências de locais e filtros de oportunidades, além de relatórios e indicadores de desempenho. A combinação desses elementos garante uma gestão moderna, colaborativa e humanizada dos plantões, reduzindo conflitos de escala, fortalecendo o vínculo entre RH, líderes e profissionais, e promovendo eficiência operacional nas instituições de saúde.
 
 ## 8. Requisitos Funcionais
 
