@@ -19,9 +19,9 @@ Mais do que organizar horários, o Pulso moderniza a relação entre gestão e m
 | **Categoria**       | **Descrição**                                                                                     |  
 |----------------------|---------------------------------------------------------------------------------------------------|  
 | **Problema**         | Descentralização e desorganização das informações sobre escalas de trabalho de profissionais da saúde, com falta de clareza em plantões, jornadas, locais e carga horária. Ferramentas fragmentadas (WhatsApp, planilhas, folhas impressas) ampliam ruídos na comunicação e geram lacunas entre profissionais e gestores. |  
-| **Afeta**            | Médicos, gestores de plantão, equipes hospitalares e indiretamente os pacientes.                 |  
+| **Afeta**            | Médicos, líderes de escala, equipes hospitalares e indiretamente os pacientes.                 |  
 | **Impacta**          | Aumenta o estresse dos profissionais, gera retrabalho, falhas operacionais (trocas mal alinhadas, dúvidas sobre escalas) e riscos à qualidade do atendimento. |  
-| **Solução**          | Plataforma inteligente que centraliza todas as informações de plantões (horários, trocas, escalas) em um único ambiente, com comunicação integrada, avisos automáticos, sugestões de escalas e interface simplificada. Oferece acesso rápido via dispositivos móveis e integração com WhatsApp, reduzindo a sobrecarga mental e operacional. |  
+| **Solução**          | Plataforma inteligente que centraliza todas as informações de plantões (horários, trocas, escalas) em um único ambiente, com comunicação integrada, avisos automáticos, sugestões de escalas e interface simplificada. Oferece acesso rápido via dispositivos móveis e integração com Google Agenda, reduzindo a sobrecarga mental e operacional. |  
 
 ## 3. Descrição dos usuários
 
