@@ -85,7 +85,7 @@ O sistema também contempla funcionalidades de personalização e automação, c
 | **RF02** | Médico PJ | Interesse em Plantão | O médico pode demonstrar interesse em um plantão específico com apenas um clique, facilitando a seleção pelo líder de escala. | Média |
 | **RF03** | Médico PJ / CLT | Lista Pessoal de Plantões | O médico tem acesso à sua agenda de plantões já confirmados, organizada em lista ou calendário. | Alta |
 | **RF04** | Médico PJ | Repassar Plantão | O médico pode disponibilizar um plantão previamente assumido para que outros médicos o peguem, podendo inclusive oferecer bonificação como incentivo. | Média |
-| **RF05** | Médico PJ | Troca de Plantão entre Médicos | Um médico pode negociar diretamente com outro colega a troca de plantões. Após acordo, a troca é registrada no sistema e o líder de escala é apenas notificado. | Média |
+| **RF05** | Médico PJ / CLT | Troca de Plantão entre Médicos | Um médico pode negociar diretamente com outro colega a troca de plantões. Após acordo, a troca é registrada no sistema e o líder de escala é apenas notificado. | Alta |
 | **RF06** | Médico PJ / CLT | Confirmação de Presença | O médico pode confirmar sua presença no início do plantão pelo sistema, registrando data e horário. | Alta |
 | **RF07** | Médico PJ | Locais Favoritos e Bloqueados | O médico pode marcar hospitais ou regiões como favoritos e bloquear locais onde não deseja atuar, ajustando o feed de oportunidades. | Média |
 | **RF08** | Médico PJ / CLT | Calendário Pessoal | O médico possui um calendário que exibe visualmente seus plantões confirmados e anotações. | Alta |
