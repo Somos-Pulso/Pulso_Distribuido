@@ -94,7 +94,7 @@ O sistema também contempla funcionalidades de personalização e automação, c
 | **RF11** | Médico PJ / CLT | Integração com Google Agenda | O médico pode exportar automaticamente seus plantões confirmados para o Google Agenda. | Alta |
 | **RF12** | Líder de Escala | Criação e Edição de Escalas | O líder de escala pode criar e organizar escalas de plantão, definir horários, atribuir médicos e editar informações de plantões já cadastrados. | Alta |
 | **RF13** | Líder de Escala | Templates de Escalas | O líder de escala pode criar e reutilizar templates de escalas (como 6h, 8h, 8h45, 12h) para facilitar a organização mensal. | Alta |
-| **RF14** | Líder de Escala | Envio de Oportunidades | O líder de escala pode enviar oportunidades de plantão para médicos PJ e CLT conforme perfil e regras da instituição. | Média |
+| **RF14** | Líder de Escala | Envio de Oportunidades | O líder de escala pode enviar oportunidades de plantão para médicos PJ conforme perfil e regras da instituição. | Média |
 | **RF15** | Líder de Escala | Lista de Médicos Parceiros | O líder de escala mantém uma lista de médicos parceiros, podendo priorizar o envio de oportunidades apenas para eles. | Alta |
 | **RF16** | Líder de Escala| Visualização de Cobertura | O líder de escala pode visualizar a ocupação das escalas, identificar setores com déficit de médicos e acompanhar a distribuição dos plantões. | Alta |
 | **RF17** | RH | Cadastro de Líderes de Escala | O RH pode cadastrar líderes de escala no sistema, vinculando matrícula e senha de acesso. | Alta |
