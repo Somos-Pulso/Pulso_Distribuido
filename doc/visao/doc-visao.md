@@ -88,20 +88,19 @@ O sistema também contempla funcionalidades de personalização e automação, c
 | **RF05** | Médico PJ / CLT | Troca de Plantão entre Médicos | Um médico pode negociar diretamente com outro colega a troca de plantões. Após acordo, a troca é registrada no sistema e o líder de escala é apenas notificado. | Alta |
 | **RF06** | Médico PJ / CLT | Confirmação de Presença | O médico pode confirmar sua presença no início do plantão pelo sistema, registrando data e horário (entrada e saída). | Alta |
 | **RF07** | Médico PJ | Intituições Favoritas e Bloqueadas | O médico pode marcar instituições ou regiões como favoritos e bloquear locais onde não deseja atuar, ajustando o feed de oportunidades. | Média |
-| **RF08** | Médico PJ / CLT | Calendário Pessoal | O médico possui um calendário que exibe visualmente seus plantões confirmados e anotações. | Alta |
+| **RF08** | Médico PJ / CLT | Calendário Pessoal | O médico possui um calendário que exibe visualmente seus plantões confirmados e anotações, podendo exportar automaticamente seus plantões confirmados para o Google Agenda. | Alta |
 | **RF09** | Médico PJ / CLT | Relatórios e Estatísticas | O médico pode acessar relatórios simples sobre seus plantões, incluindo quantidade realizada, valores a receber e comparativos mensais, com opção de gamificação entre colegas. | Alta |
 | **RF10** | Médico PJ / CLT | Acesso a Escalas | O médico pode visualizar a escala completa de plantões organizada pelo líder de escala, incluindo plantões próprios, de colegas e os que ainda estão disponíveis para repasse ou troca. | Alta |
-| **RF11** | Médico PJ / CLT | Integração com Google Agenda | O médico pode exportar automaticamente seus plantões confirmados para o Google Agenda. | Alta |
-| **RF12** | Líder de Escala | Criação e Edição de Escalas | O líder de escala pode criar e organizar escalas de plantão, definir horários, atribuir médicos e editar informações de plantões já cadastrados. | Alta |
-| **RF13** | Líder de Escala | Templates de Escalas | O líder de escala pode criar e reutilizar templates de escalas (como 6h, 8h, 8h45, 12h) para facilitar a organização mensal. | Alta |
-| **RF14** | Líder de Escala | Envio de Oportunidades | O líder de escala pode enviar oportunidades de plantão para médicos PJ conforme perfil e regras da instituição. | Média |
-| **RF15** | Líder de Escala | Lista de Médicos Parceiros | O líder de escala mantém uma lista de médicos parceiros, podendo priorizar o envio de oportunidades apenas para eles. | Alta |
-| **RF16** | Líder de Escala| Visualização de Cobertura | O líder de escala pode visualizar a ocupação das escalas, identificar setores com déficit de médicos e acompanhar a distribuição dos plantões. | Alta |
-| **RF17** | RH | Cadastro de Líderes de Escala | O RH pode cadastrar líderes de escala no sistema, vinculando matrícula e senha de acesso. | Alta |
-| **RF18** | RH | Vinculação de Profissionais | O RH pode cadastrar e vincular profissionais de empresas privadas e cooperativas médicas para participação em escalas. | Alta |
-| **RF19** | RH | Controle de Permissões | O RH pode definir os níveis de permissão dos usuários. | Alta |
-| **RF20** | Sistema | Notificações e Alertas | O sistema envia notificações sobre eventos importantes, como novos plantões disponíveis, atribuição, trocas ou cancelamentos, garantindo que médicos e líderes de escala fiquem sempre atualizados. | Alta |
-| **RF21** | Médico PJ / CLT | Perfis de Usuário |    Cada usuário possui um perfil contendo informações pessoais e profissionais (nome, especialidade, ano de formação, Pix). Líderes de escala podem acessar os perfis dos médicos colaboradores. | Alta |
+| **RF11** | Líder de Escala | Criação e Edição de Escalas | O líder de escala pode criar e organizar escalas de plantão, definir horários, atribuir médicos e editar informações de plantões já cadastrados. | Alta |
+| **RF12** | Líder de Escala | Templates de Escalas | O líder de escala pode criar e reutilizar templates de escalas (como 6h, 8h, 8h45, 12h) para facilitar a organização mensal. | Alta |
+| **RF13** | Líder de Escala | Envio de Oportunidades | O líder de escala pode enviar oportunidades de plantão para médicos PJ conforme perfil e regras da instituição. | Média |
+| **RF14** | Líder de Escala | Lista de Médicos Parceiros | O líder de escala mantém uma lista de médicos parceiros, podendo priorizar o envio de oportunidades apenas para eles. | Alta |
+| **RF15** | Líder de Escala| Visualização de Cobertura | O líder de escala pode visualizar a ocupação das escalas, identificar setores com déficit de médicos e acompanhar a distribuição dos plantões. | Alta |
+| **RF16** | RH | Cadastro de Líderes de Escala | O RH pode cadastrar líderes de escala no sistema, vinculando matrícula e senha de acesso. | Alta |
+| **RF17** | RH | Vinculação de Profissionais | O RH pode cadastrar e vincular profissionais de empresas privadas e cooperativas médicas para participação em escalas. | Alta |
+| **RF18** | RH | Controle de Permissões | O RH pode definir os níveis de permissão dos usuários. | Alta |
+| **RF19** | Sistema | Notificações e Alertas | O sistema envia notificações sobre eventos importantes, como novos plantões disponíveis, atribuição, trocas ou cancelamentos, garantindo que médicos e líderes de escala fiquem sempre atualizados. | Alta |
+| **RF20** | Médico PJ / CLT | Perfis de Usuário |    Cada usuário possui um perfil contendo informações pessoais e profissionais (nome, especialidade, ano de formação, Pix). Líderes de escala podem acessar os perfis dos médicos colaboradores. | Alta |
 
 
 ## 9. Requisitos não-funcionais
