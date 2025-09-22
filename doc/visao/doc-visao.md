@@ -10,7 +10,7 @@
 
 ## 1. Objetivo do projeto
 
-Nascido da urgência em substituir o caos por eficiência, o Pulso surge para transformar a gestão de plantões e horários nas instituições de saúde. Em um cenário marcado por falhas de comunicação, buscas desgastantes por informações e gestores correndo contra o tempo para preencher escalas, a plataforma propõe uma gestão precisa, humana e centralizada, eliminando inconsistências e garantindo que a operação reflita um propósito maior: o cuidado.
+Nascido da urgência em substituir o caos por eficiência, o Pulso surge para transformar a gestão de plantões e horários nas instituições de saúde. Em um cenário marcado por falhas de comunicação, buscas desgastantes por informações e líderes de escalas correndo contra o tempo para preencher escalas, a plataforma propõe uma gestão precisa, humana e centralizada, eliminando inconsistências e garantindo que a operação reflita um propósito maior: o cuidado.
 
 Mais do que organizar horários, o Pulso moderniza a relação entre gestão e médicos por meio de uma solução digital estruturada em módulos complementares: o do líder de escala, que cria e gerencia escalas mensais, define plantões fixos e envia oportunidades com segurança e alertas automáticos contra violações trabalhistas; e o do profissional, que acessa facilmente suas escalas, confirma presença, recebe notificações de novos plantões alinhados às suas preferências e conta com ferramentas para trocas e repasses. Afinal, a saúde não se improvisa — constrói-se com planejamento, tecnologia e uma ponte entre o caos diário e a excelência no atendimento.
 
