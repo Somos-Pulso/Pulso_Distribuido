@@ -44,14 +44,14 @@
 ---
 
 ## Protótipo
-![Gerenciar líderes de escala](https://github.com/user-attachments/assets/exemplo-lideres.png)
+
 
 > Obs. as seções a seguir apenas serão utilizadas na segunda unidade do PDSWeb (segundo orientações do gerente do projeto).
 
 ## Diagrama de Interação (Sequência ou Comunicação)
 
-<img width="3436" height="1516" alt="etapa - gerenciar lideres de escala" src="https://github.com/user-attachments/assets/exemplo-diagrama-lideres.png" />
+
 
 ## Diagrama de Classes de Projeto
 
-<img width="1781" height="1062" alt="classes gerenciar lideres de escala" src="https://github.com/user-attachments/assets/exemplo-classes-lideres.png" />
+
