@@ -23,18 +23,18 @@ Definir e documentar os padroes de projeto que serao utilizados no **Pulso**, ga
 
 ### 2. Estrutura de Diretorios (por dominio/modulo)
 
-src/principal/java/web/pulso/
+src/main/java/web/pulso/
 
-├── conta/
-│ ├── controller/
-│ ├── service/
-│ ├── repository/
-│ └── model/
-├── hospital/
-├── notificacao/
-├── escala/
-├── excecoes/ # excecoes compartilhadas
-└── configuracao/ # configuracoes globais
+├── conta/ <br>
+│ ├── controller/<br>
+│ ├── service/<br>
+│ ├── repository/<br>
+│ └── model/<br>
+├── hospital/<br>
+├── notificacao/<br>
+├── escala/<br>
+├── excecoes/ # excecoes compartilhadas<br>
+└── configuracao/ # configuracoes globais<br>
 
 
 ---
