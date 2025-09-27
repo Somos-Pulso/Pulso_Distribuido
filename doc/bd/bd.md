@@ -108,6 +108,18 @@
 
 ---
 
+### Tabela: Prof_Especialidade
+
+**Descrição** : Representa a ligação entre um profissional e a sua especialidade.
+
+| Colunas                | Descrição                                 | Tipo de Dado | Tamanho | Null | PK | FK | Unique | Identity | Default | Check    |
+| ---------------------- | ----------------------------------------- | ------------ | ------- | ---- | -- | -- | ------ | -------- | ------- | -------- |
+| id_prof_especialidade  | Identificador único do prof_especialidade | \[int]       |         | ☐    | ☑  | ☐  | ☐      | ☑        |         | Not null |
+| id_profissional        | Chave ligando ao profissional             | \[int]       |         | ☐    | ☐  | ☑  | ☐      | ☐        |         | Not null |
+| id_especialidade       | Chave ligando a especialidade             | \[int]       |         | ☐    | ☐  | ☑  | ☐      | ☐        |         | Not null |
+
+---
+
 ### Tabela: Vínculo
 
 **Descrição** : Representa a relação entre um profissional e uma instituição, permitindo que o profissional atue nos plantões daquela instituição.
