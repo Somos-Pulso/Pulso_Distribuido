@@ -170,6 +170,18 @@
 
 ---
 
+### Tabela: Profissional_Plantão
+
+**Descrição** : Representa a ligação entre o plantão e o profissional que pegou ele.
+
+| Colunas         | Descrição                                   | Tipo de Dado | Tamanho | Null | PK | FK | Unique | Identity | Default | Check    |
+| --------------- | ------------------------------------------- | ------------ | ------- | ---- | -- | -- | ------ | -------- | ------- | -------- |
+| id_prof_plantao | Identificador único do profissional_plantao | \[int]       |         | ☐    | ☑  | ☐  | ☐      | ☑        |         | Not null |
+| id_plantao      | Chave ligando ao plantao                    | \[int]       |         | ☐    | ☐  | ☑  | ☑      | ☐        |         | Not null |
+| id_profissional | Chave ligando ao profissional               | \[int]       |         | ☐    | ☐  | ☑  | ☑      | ☐        |         | Not null |
+
+---
+
 ### Tabela: Troca
 
 **Descrição** : Representa operações de repasse ou troca de plantões entre profissionais, podendo envolver um ou mais plantões e participantes.
