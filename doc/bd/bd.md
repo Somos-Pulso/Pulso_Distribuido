@@ -50,7 +50,7 @@
 | ------------------ | --------------------------------------------------- | ------------ | ------- | ---- | -- | -- | ------ | -------- | ------- | -------- |
 | id_profissional    | Identificador único do profissional                 | \[int]       |         | ☐    | ☑  | ☐  | ☐      | ☑        |         | Not null |
 | ano_formacao       | Data guardando o ano de formação do profissional    | \[timestamp] |         | ☐    | ☐  | ☐  | ☐      | ☐        |         | Not null |
-| pix                | Pix do profissional para pagamentos                 | \[varchar]   | 50      | ☑    | ☐  | ☐  | ☐      | ☐        |         |          |
+| pix                | Pix do profissional para pagamentos                 | \[varchar]   | 50      | ☑    | ☐  | ☐  | ☑      | ☐        |         |          |
 | tipo_pix           | Qual o tipo do pix do profissional                  | \[TipoPix]   |         | ☑    | ☐  | ☐  | ☐      | ☐        |         |          |
 | crm                | CRM do profissional                                 | \[varchar]   | 8       | ☐    | ☐  | ☐  | ☐      | ☐        |         | Not null |
 | data_nasc          | Data guardando a data de nascimento do profissional | \[timestamp] |         | ☐    | ☐  | ☐  | ☐      | ☐        |         | Not null |
