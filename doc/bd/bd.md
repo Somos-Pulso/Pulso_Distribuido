@@ -201,4 +201,15 @@
 
 **Descrição** : Representa mensagens enviadas a usuários do sistema, como alertas de escala, confirmações de plantões ou avisos de troca.
 
+| Colunas         | Descrição                                       | Tipo de Dado         | Tamanho | Null | PK | FK | Unique | Identity | Default | Check    |
+| --------------- | ----------------------------------------------- | -------------------- | ------- | ---- | -- | -- | ------ | -------- | ------- | -------- |
+| id_notificacao  | Identificador único da notificação              | \[int]               |         | ☐    | ☑  | ☐  | ☐      | ☑        |         | Not null |
+| id_remetente    | Itentificador de quem enviou a notificação      | \[int]               |         | ☑    | ☐  | ☐  | ☐      | ☐        |         |          |
+| id_destinatario | Identificador de quem vai receber a notificação | \[imt]               |         | ☐    | ☐  | ☐  | ☐      | ☐        |         | Not null |
+| mensagem        | Mensaegm do que se trata a notificação          | \[text]              |         | ☑    | ☐  | ☐  | ☐      | ☐        |         |          |
+| tipo            | Tipo da notificação                             | \[TipoNotificacao]   |         | ☐    | ☐  | ☐  | ☐      | ☐        |         | Not null |
+| titulo          | Título visível da notificação                   | \[varchar]           | 100     | ☐    | ☐  | ☐  | ☐      | ☐        |         | Not null |
+| conteudo        | Conteúdo da notificação                         | \[json]              |         | ☑    | ☐  | ☐  | ☐      | ☐        |         |          |
+| status          | Stauts da notificação                           | \[StatusNotificacao] |         | ☐    | ☐  | ☐  | ☐      | ☐        |         | Not null |
+
 ---
