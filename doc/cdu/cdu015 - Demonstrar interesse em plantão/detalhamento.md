@@ -19,6 +19,30 @@
 | | **7 - Atualiza** o status do plantão para “Solicitação em andamento”.                                                                           |
 
 
+### Fluxos Alternativos – Demonstrar Interesse em Plantão
+
+## Fluxo Alternativo I - [Aprovação automática]
+| Ações do Médico Interessado | Ações do Sistema |
+| :-------------------------: | :--------------: |
+| Solicita assumir o plantão || 
+|| O sistema verifica que a solicitação atende a todos os critérios e aprova automaticamente o repasse. |
+|| Atualiza o status do plantão para “Assumido pelo médico interessado”. |
+
+## Fluxo Alternativo II - [Aprovação pelo líder de escala]
+| Ações do Médico Interessado | Ações do Sistema |
+| :-------------------------: | :--------------: |
+| Solicita assumir o plantão || 
+|| O sistema encaminha a solicitação para o líder de escala revisar e aprovar. |
+|| Após aprovação do líder, atualiza o status do plantão para “Assumido pelo médico interessado”. |
+
+## Fluxo Alternativo III - [Aprovação pelo médico titular]
+| Ações do Médico Interessado | Ações do Sistema |
+| :-------------------------: | :--------------: |
+| Solicita assumir o plantão || 
+|| O sistema envia a solicitação ao médico inicialmente responsável pelo plantão. |
+|| Após aprovação do médico titular, atualiza o status do plantão para “Assumido pelo médico interessado”. |
+
+
 
 
 ## Protótipo

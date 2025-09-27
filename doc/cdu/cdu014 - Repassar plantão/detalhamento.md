@@ -15,6 +15,28 @@
 | **2 - Disponibiliza** o plantão para troca, podendo indicar o pagamento de ágil.  | **3 - O sistema atualiza** o status do plantão no feed, marcando-o como “Disponível para troca”. |
 
 
+### Fluxos Alternativos – Repassar Plantão
+
+## Fluxo Alternativo I – [Indicar pagamento de ágil opcional]
+| Ações do Médico Titular | Ações do Sistema |
+|------------------------|-----------------|
+| Disponibiliza o plantão e opta por indicar pagamento de ágil | O sistema exibe o valor informado e atualiza o plantão no feed com a informação do ágil, destacando-o para outros médicos. |
+
+## Fluxo Alternativo II – [Plantão parcialmente preenchido]
+| Ações do Médico Titular | Ações do Sistema |
+|------------------------|-----------------|
+| Disponibiliza apenas parte do horário do plantão (ex.: metade do turno) | O sistema atualiza o status do plantão no feed como “Disponível para troca parcial” e ajusta os horários visíveis. |
+
+## Fluxo Alternativo III – [Suspender repasse antes de ser assumido]
+| Ações do Médico Titular | Ações do Sistema |
+|------------------------|-----------------|
+| Decide **retirar** o plantão do feed antes que outro médico o assuma | O sistema atualiza o status do plantão para “Não disponível para troca” e mantém o plantão alocado ao titular. |
+
+## Fluxo Alternativo IV – [Editar informações antes de disponibilizar]
+| Ações do Médico Titular | Ações do Sistema |
+|------------------------|-----------------|
+| Altera dados do plantão (ex.: descrição, observações, horário) antes de disponibilizar | O sistema salva as alterações e atualiza o plantão no feed com as novas informações antes de marcar como disponível para troca. |
+
 
 
 ## Protótipo
