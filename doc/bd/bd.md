@@ -96,6 +96,18 @@
 
 ---
 
+### Tabela: Líder_Especialidade
+
+**Descrição** : Representa a ligação entre um líder de escala e sua especialidade.
+
+| Colunas                | Descrição                                  | Tipo de Dado | Tamanho | Null | PK | FK | Unique | Identity | Default | Check    |
+| ---------------------- | ------------------------------------------ | ------------ | ------- | ---- | -- | -- | ------ | -------- | ------- | -------- |
+| id_lider_especialidade | Identificador único do lider_especialidade | \[int]       |         | ☐    | ☑  | ☐  | ☐      | ☑        |         | Not null |
+| id_lider_escala        | Chave ligando ao lider de escala           | \[int]       |         | ☐    | ☐  | ☑  | ☑      | ☐        |         | Not null |
+| id_especialidade       | Chave ligando a especialidade              | \[int]       |         | ☐    | ☐  | ☑  | ☑      | ☐        |         | Not null |
+
+---
+
 ### Tabela: Vínculo
 
 **Descrição** : Representa a relação entre um profissional e uma instituição, permitindo que o profissional atue nos plantões daquela instituição.
