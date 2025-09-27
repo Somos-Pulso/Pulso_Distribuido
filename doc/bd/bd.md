@@ -124,6 +124,13 @@
 
 **Descrição** : Representa a relação entre um profissional e uma instituição, permitindo que o profissional atue nos plantões daquela instituição.
 
+| Colunas         | Descrição                                          | Tipo de Dado   | Tamanho | Null | PK | FK | Unique | Identity | Default | Check    |
+| --------------- | -------------------------------------------------- | -------------- | ------- | ---- | -- | -- | ------ | -------- | ------- | -------- |
+| id_vinculo      | Identificador único do vinculo                     | \[int]         |         | ☐    | ☑  | ☐  | ☐      | ☑        |         | Not null |
+| tipo_vinculo    | Qual o tipo de vínculo que está sendo estabelecido | \[TipoVinculo] |         | ☐    | ☐  | ☐  | ☐      | ☐        |         | Not null |
+| id_instituicao  | Chave ligando vinculo a instituição                | \[int]         |         | ☐    | ☐  | ☑  | ☐      | ☐        |         | Not null |
+| id_profissional | Chave ligando vinculo ao profissional              | \[int]         |         | ☐    | ☐  | ☑  | ☐      | ☐        |         | Not null |
+
 ---
 
 ### Tabela: Escala
