@@ -62,6 +62,14 @@
 
 **Descrição** : Representa organizações de saúde, como hospitais, clínicas ou cooperativas, que oferecem especialidades, setores e escalas de plantões.
 
+| Colunas            | Descrição                                                  | Tipo de Dado | Tamanho | Null | PK | FK | Unique | Identity | Default | Check    |
+| ------------------ | ---------------------------------------------------------- | ------------ | ------- | ---- | -- | -- | ------ | -------- | ------- | -------- |
+| id_instituição     | Identificador único da instituição                         | \[int]       |         | ☐    | ☑  | ☐  | ☐      | ☑        |         | Not null |
+| endereco           | Endereco atual da instituição                              | \[varchar]   | 255     | ☐    | ☐  | ☐  | ☑      | ☐        |         | Not null |
+| cnpj               | CNPJ da instituição                                        | \[varchar]   | 14      | ☐    | ☐  | ☐  | ☑      | ☐        |         | Not null |
+| exige_vinculo      | Confirmador se é exigido vínculo para atuar na instituição | \[boolean]   |         | ☐    | ☐  | ☐  | ☐      | ☐        | False   | Not null |
+| id_usuario         | Chave ligando instituição ao seu usuário                   | \[varchar]   | 8       | ☐    | ☐  | ☑  | ☐      | ☐        |         | Not null |
+
 ---
 
 ### Tabela: Especialidade
