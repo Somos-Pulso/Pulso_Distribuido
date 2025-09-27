@@ -1,4 +1,4 @@
-# Modelo de Dados
+<img width="747" height="682" alt="image" src="https://github.com/user-attachments/assets/36bc8ea6-1194-4824-85ad-fe71e828e031" /># Modelo de Dados
 
 ## Diagrama ER
 <img width="2001" height="1061" alt="pulsodistribuido drawio" src="https://github.com/user-attachments/assets/c01deec7-ae9e-4a55-8cf1-355f4fe6b216" />
@@ -45,6 +45,16 @@
 ### Tabela: Profissional
 
 **Descrição** : Representa indivíduos que atuam como profissionais de saúde cadastrados no sistema, podendo assumir vínculos em diferentes instituições.
+
+| Colunas            | Descrição                                           | Tipo de Dado | Tamanho | Null | PK | FK | Unique | Identity | Default | Check    |
+| ------------------ | --------------------------------------------------- | ------------ | ------- | ---- | -- | -- | ------ | -------- | ------- | -------- |
+| id_profissional    | Identificador único do profissional                 | \[int]       |         | ☐    | ☑  | ☐  | ☐      | ☑        |         | Not null |
+| ano_formacao       | Data guardando o ano de formação do profissional    | \[timestamp] |         | ☐    | ☐  | ☐  | ☐      | ☐        |         | Not null |
+| pix                | Pix do profissional para pagamentos                 | \[varchar]   | 50      | ☑    | ☐  | ☐  | ☐      | ☐        |         |          |
+| tipo_pix           | Qual o tipo do pix do profissional                  | \[TipoPix]   |         | ☑    | ☐  | ☐  | ☐      | ☐        |         |          |
+| crm                | CRM do profissional                                 | \[varchar]   | 8       | ☐    | ☐  | ☐  | ☐      | ☐        |         | Not null |
+| data_nasc          | Data guardando a data de nascimento do profissional | \[timestamp] |         | ☐    | ☐  | ☐  | ☐      | ☐        |         | Not null |
+| id_usuario         | Chave ligando profissional ao seu usuário           | \[int]       |         | ☐    | ☐  | ☑  | ☐      | ☐        |         | Not null |
 
 ---
 
