@@ -1,4 +1,4 @@
-<img width="747" height="682" alt="image" src="https://github.com/user-attachments/assets/36bc8ea6-1194-4824-85ad-fe71e828e031" /># Modelo de Dados
+# Modelo de Dados
 
 ## Diagrama ER
 <img width="2001" height="1061" alt="pulsodistribuido drawio" src="https://github.com/user-attachments/assets/c01deec7-ae9e-4a55-8cf1-355f4fe6b216" />
