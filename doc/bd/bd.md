@@ -76,6 +76,11 @@
 
 **Descrição** : Representa áreas de atuação médica, podendo estar ligadas a profissionais e a instituições.
 
+| Colunas            | Descrição                            | Tipo de Dado | Tamanho | Null | PK | FK | Unique | Identity | Default | Check    |
+| ------------------ | ------------------------------------ | ------------ | ------- | ---- | -- | -- | ------ | -------- | ------- | -------- |
+| id_especialidade   | Identificador único da especialidade | \[int]       |         | ☐    | ☑  | ☐  | ☐      | ☑        |         | Not null |
+| nome               | Nome específico da especialidade     | \[varchar]   | 100     | ☐    | ☐  | ☐  | ☑      | ☐        |         | Not null |
+
 ---
 
 ### Tabela: Setor
