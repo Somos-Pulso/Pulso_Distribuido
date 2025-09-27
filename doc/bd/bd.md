@@ -186,6 +186,15 @@
 
 **Descrição** : Representa operações de repasse ou troca de plantões entre profissionais, podendo envolver um ou mais plantões e participantes.
 
+| Colunas         | Descrição                                          | Tipo de Dado   | Tamanho | Null | PK | FK | Unique | Identity | Default | Check    |
+| --------------- | -------------------------------------------------- | -------------- | ------- | ---- | -- | -- | ------ | -------- | ------- | -------- |
+| id_troca        | Identificador único da troca                       | \[int]         |         | ☐    | ☑  | ☐  | ☐      | ☑        |         | Not null |
+| comentario      | Comentário do motivo da troca                      | \[text]        |         | ☐    | ☐  | ☐  | ☐      | ☐        |         | Not null |
+| tipo            | Qual o tipo da troca                               | \[TipoTroca]   |         | ☐    | ☐  | ☐  | ☐      | ☐        |         | Not null |
+| status          | Qual o status da troca                             | \[StatusTroca] |         | ☐    | ☐  | ☐  | ☐      | ☐        |         | Not null |
+| id_plantao      | Chave ligando a troca ao plantão disponível        | \[int]         |         | ☐    | ☐  | ☑  | ☐      | ☐        |         | Not null |
+| id_profissional | Chave ligando ao profissional que fez a requisição | \[int]         |         | ☐    | ☐  | ☑  | ☐      | ☐        |         | Not null |
+
 ---
 
 ### Tabela: Notificação
