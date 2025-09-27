@@ -1,7 +1,7 @@
 # Modelo de Dados
 
 ## Diagrama ER
-<img width="2001" height="1061" alt="pulsodistribuido drawio" src="https://github.com/user-attachments/assets/c01deec7-ae9e-4a55-8cf1-355f4fe6b216" />
+<img width="2001" height="1062" alt="pulsodistribuido drawio (1)" src="https://github.com/user-attachments/assets/fe93dc45-2bed-44ee-a078-6f31cb20b06f" />
 
 ## Modelo Relacional
 <img width="6276" height="2892" alt="erdplus (3)" src="https://github.com/user-attachments/assets/2904339a-bd37-413f-a008-ef18b38bb971" />
