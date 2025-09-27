@@ -14,13 +14,19 @@
 
 **Descrição** : Representa contas de acesso ao sistema, usadas tanto por pessoas quanto por instituições. Contém dados de autenticação e permissões.
 
-| Colunas      | Descrição                                  | Tipo de Dado | Tamanho | Null | PK | FK | Unique | Identity | Default | Check    |
-| ------------ | ------------------------------------------ | ------------ | ------- | ---- | -- | -- | ------ | -------- | ------- | -------- |
-| id_usuario   | Identificador único do usuário             | \[int]       |         | ☐    | ☑  | ☐  | ☐      | ☑        |         | Not null |
-| cpf          | Cadastro de pessoa física                  | \[char]      | 11      | ☐    | ☐  | ☐  | ☑      | ☐        |         | Not null |
-| telefone     | Número do telefone principal               | \[varchar]   | 11      | ☐    | ☐  | ☐  | ☐      | ☐        |         | Not null |
-| descrição    | Informação adicional sobre o profissional  | \[text]      |         | ☑    | ☐  | ☐  | ☐      | ☐        |         |          |
-| foto\_perfil | URL da Foto de apresentação do profissional| \[varchar]   | 255     | ☑    | ☐  | ☐  | ☐      | ☐        |         |          |
+| Colunas       | Descrição                                                  | Tipo de Dado | Tamanho | Null | PK | FK | Unique | Identity | Default | Check    |
+| ------------- | ---------------------------------------------------------- | ------------ | ------- | ---- | -- | -- | ------ | -------- | ------- | -------- |
+| id_usuario    | Identificador único do usuário                             | \[int]       |         | ☐    | ☑  | ☐  | ☐      | ☑        |         | Not null |
+| nome          | Nome do usuário                                            | \[varchar]   | 100     | ☐    | ☐  | ☐  | ☐      | ☐        |         | Not null |
+| matricula     | Matrícula específica para realização do login do usuário   | \[char]      | 14      | ☐    | ☐  | ☐  | ☑      | ☐        |         | Not null |
+| email         | E-mail para contato com o usuário                          | \[varchar]   | 100     | ☐    | ☐  | ☐  | ☐      | ☐        |         | Not null |
+| telefone      | Telefone para contato com o usuário                        | \[varchar]   | 14      | ☐    | ☐  | ☐  | ☐      | ☐        |         | Not null |
+| foto_perfil   | Foto de perfil do usuário                                  | \[varchar]   | 255     | ☐    | ☐  | ☐  | ☐      | ☐        |         | Not null |
+| senha         | Senha para realização do login do usuário                  | \[varchar]   | 255     | ☐    | ☐  | ☐  | ☐      | ☐        |         | Not null |
+| ativo         | Confirmador se é um usuário ativo no sistema               | \[boolean]   |         | ☐    | ☐  | ☐  | ☐      | ☐        | True    | Not null |
+| ultimo_login  | Data guardando o ultimo login do usuário                   | \[timestamp] |         | ☐    | ☐  | ☐  | ☐      | ☐        | today   | Not null |
+| criado_em     | Data guardando quando a conta de usuário foi criada        | \[timestanp] |         | ☐    | ☐  | ☐  | ☐      | ☐        | today   | Not null |
+| atualizado_em | Data guardando o último registro de atualização do usuário | \[timestamp] |         | ☐    | ☐  | ☐  | ☐      | ☐        | today   | Not null |
 
 ---
 
