@@ -87,6 +87,13 @@
 
 **Descrição** : Representa divisões internas de uma instituição dentro de uma especialidade, utilizadas para organização de escalas e plantões.
 
+| Colunas            | Descrição                               | Tipo de Dado | Tamanho | Null | PK | FK | Unique | Identity | Default | Check    |
+| ------------------ | --------------------------------------- | ------------ | ------- | ---- | -- | -- | ------ | -------- | ------- | -------- |
+| id_setor           | Identificador único do setor            | \[int]       |         | ☐    | ☑  | ☐  | ☐      | ☑        |         | Not null |
+| nome               | Nome do setor em questão                | \[varchar]   | 100     | ☐    | ☐  | ☐  | ☐      | ☐        |         | Not null |
+| id_instituicao     | Chave ligando setor a sua instituição   | \[int]       |         | ☐    | ☐  | ☑  | ☐      | ☐        |         | Not null |
+| id_especialidade   | Chave ligando setor a sua especialidade | \[int]       |         | ☐    | ☐  | ☑  | ☐      | ☐        |         | Not null |
+
 ---
 
 ### Tabela: Vínculo
