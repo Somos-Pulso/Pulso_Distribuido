@@ -137,6 +137,17 @@
 
 **Descrição** : Representa um conjunto organizado de plantões dentro de um período específico, associado a um setor e gerido por um líder de escala.
 
+| Colunas         | Descrição                                                 | Tipo de Dado    | Tamanho | Null | PK | FK | Unique | Identity | Default | Check    |
+| --------------- | --------------------------------------------------------- | --------------- | ------- | ---- | -- | -- | ------ | -------- | ------- | -------- |
+| id_escala       | Identificador único da escala                             | \[int]          |         | ☐    | ☑  | ☐  | ☐      | ☑        |         | Not null |
+| nome            | Nome da escala                                            | \[varchar]      | 150     | ☐    | ☐  | ☐  | ☐      | ☐        |         | Not null |
+| mes_referencia  | Mês ao qual a escala de refere                            | \[timestamp]    |         | ☐    | ☐  | ☐  | ☐      | ☐        | today   | Not null |
+| status          | Status atual da escala                                    | \[StatusEscala] |         | ☐    | ☐  | ☐  | ☐      | ☐        |         | Not null |
+| data_criacao    | Data guardando o registro de criação da escala            | \[timestamp]    |         | ☐    | ☐  | ☐  | ☐      | ☐        | today   | Not null |
+| data_aualizacao | Data guardando o registro de última atualização da escala | \[timestamp]    |         | ☐    | ☐  | ☐  | ☐      | ☐        | today   | Not null |
+| id_lider_escala | Chave ligando a escala ao lider de escala que a montou    | \[int]          |         | ☐    | ☐  | ☑  | ☐      | ☐        |         | Not null |
+| id_setor        | Chave ligando a escala ao seu setor                       | \[int]          |         | ☐    | ☐  | ☑  | ☐      | ☐        |         | Not null |
+
 ---
 
 ### Tabela: Plantão
