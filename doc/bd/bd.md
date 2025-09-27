@@ -34,6 +34,12 @@
 
 **Descrição** : Representa o profissional responsável pela criação e gestão de escalas em uma instituição.
 
+| Colunas            | Descrição                                    | Tipo de Dado | Tamanho | Null | PK | FK | Unique | Identity | Default | Check    |
+| ------------------ | -------------------------------------------- | ------------ | ------- | ---- | -- | -- | ------ | -------- | ------- | -------- |
+| id_lider_escala    | Identificador único do lider de escala       | \[int]       |         | ☐    | ☑  | ☐  | ☐      | ☑        |         | Not null |
+| id_usuario         | Chave ligando lider de escala ao seu usuário | \[int]       |         | ☐    | ☐  | ☑  | ☐      | ☐        |         | Not null |
+| id_vinculo         | Chave ligando líder de escala ao seu vínculo | \[int]       |         | ☐    | ☐  | ☑  | ☐      | ☐        |         | Not null |
+
 ---
 
 ### Tabela: Profissional
