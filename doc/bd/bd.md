@@ -4,7 +4,7 @@
 <img width="2001" height="1061" alt="pulsodistribuido drawio" src="https://github.com/user-attachments/assets/c01deec7-ae9e-4a55-8cf1-355f4fe6b216" />
 
 ## Modelo Relacional
-<img width="6276" height="2892" alt="erdplus (1)" src="https://github.com/user-attachments/assets/973b8109-799a-4303-896f-ed00b721d468" />
+<img width="6276" height="2892" alt="erdplus (3)" src="https://github.com/user-attachments/assets/2904339a-bd37-413f-a008-ef18b38bb971" />
 
 ## Dicionário de Dados
 
