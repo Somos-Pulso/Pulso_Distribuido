@@ -154,6 +154,20 @@
 
 **Descrição** : Representa um turno de atendimento médico com data e duração definidas, pertencente a uma escala e associado a um ou mais profissionais.
 
+| Colunas              | Descrição                                                        | Tipo de Dado      | Tamanho | Null | PK | FK | Unique | Identity | Default | Check    |
+| -------------------- | ---------------------------------------------------------------- | ----------------- | ------- | ---- | -- | -- | ------ | -------- | ------- | -------- |
+| id_plantao           | Identificador único do plantao                                   | \[int]            |         | ☐    | ☑  | ☐  | ☐      | ☑        |         | Not null |
+| hora_entrada         | Hora de entrada do profissional no plantão                       | \[timestamp]      |         | ☐    | ☐  | ☐  | ☐      | ☐        |         | Not null |
+| hora_saida           | Hora de saída do profissional do plantão                         | \[timestamp]      |         | ☐    | ☐  | ☐  | ☐      | ☐        |         | Not null |
+| estimativa_valor     | Estimativa do valor a ser pago pelo plantão                      | \[numeric]        |         | ☐    | ☐  | ☐  | ☐      | ☐        |         | Not null |
+| forma_pagamento      | Qual seria a forma de pagamento pelo plantão                     | \[FormaPagamento] |         | ☑    | ☐  | ☐  | ☐      | ☐        |         |          |
+| estimativa_pagamento | Data guardando a estimativa de ate quando o plantão vai ser pago | \[timestamp]      |         | ☑    | ☐  | ☐  | ☐      | ☐        |         |          |
+| comentario           | Comentários extras com mais informações sobre o plantão          | \[text]           |         | ☑    | ☐  | ☐  | ☐      | ☐        |         |          |
+| qtd_profissionais    | Quantidade de profissionais que podem pegar o plantão            | \[int]            |         | ☐    | ☐  | ☐  | ☐      | ☐        | 1       | Not null |
+| data_criacao         | Data guardando o registro de criação do plantão                  | \[timestamp]      |         | ☐    | ☐  | ☐  | ☐      | ☐        | today   | Not null |
+| data_atualizacao     | Data guardando o últmo registro de atualização do plantão        | \[timestamp]      |         | ☐    | ☐  | ☐  | ☐      | ☐        | today   | Not null |
+| id_escala            | Chave ligando o plantão a sua escala                             | \[int]            |         | ☐    | ☐  | ☑  | ☐      | ☐        |         | Not null |
+
 ---
 
 ### Tabela: Troca
