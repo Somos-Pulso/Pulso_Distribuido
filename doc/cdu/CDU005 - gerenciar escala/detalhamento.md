@@ -41,8 +41,9 @@
 |                       Ações do ator                      |                                      Ações do sistema                                      |
 | :------------------------------------------------------: | :----------------------------------------------------------------------------------------: |
 | 1.a - Na tela de detalhes da escala, seleciona “Excluir” |                                                                                            |
-|                                                          | 1.b - Verifica se a escala ainda não foi publicada e não há plantões prestes a serem pagos |
-|                                                          |                    1.c - Remove a escala e confirma exclusão ao usuário                    |
+|                                                          | 1.b - Verifica se a escala ainda não foi publicada                                         |
+|                                                          |                    1.c - Remove a escala e dados oriundos dela                             |
+| 1.d - Redirecionado para listagem de escalas             |                                                                                            |
 
 ## Fluxo Alternativo IV - [Detalhar escala]
 
@@ -67,6 +68,13 @@
 | 0.1 - Preenche formulário de criação da escala com dados incorretos ou incompletos |                                                                         |
 |                                                                                    | 0.2 - Exibe mensagem de erro destacando os campos inválidos ou ausentes |
 
+## Fluxo Exceção II - [Excluir escala já publicada]
+
+|                                    Ações do ator            |                             Ações do sistema                                                 |
+| :---------------------------------------------------------: | :------------------------------------------------------------------------------------------: |
+| 1.a.1 - Na tela de detalhes da escala, seleciona “Excluir”  |                                                                                              |
+|                                                             | 1.a.2 - Verifica se a escala ainda não foi publicada                                         |
+|                                                             | 1.a.3 - Exibe mensagem de erro informando que não é possível excluir uma escala já publicada |
 
 ## Protótipo
 
