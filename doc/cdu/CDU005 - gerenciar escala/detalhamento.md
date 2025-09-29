@@ -14,12 +14,19 @@
 |                                                                                                      | 2 - Exibe formulário para criação da escala com campos: nome da escala, mês de referência, especialidade, setor e opção de usar template |
 |                        3 - Preenche os dados do formulário e confirma criação                        |                                                                                                                                          |
 |                                                                                                      |                                 4 - Recebe os dados informados, valida campos obrigatórios e consistência                                |
-|                                                                                                      |         5a - Se escolheu usar um template: cria a nova escala replicando os plantões do template, adaptados ao mês de referência         |
-|                                                                                                      |                         5b - Se não escolheu template: cria escala vazia apenas com horários fixos da instituição                        |
+|                                                                                                      |                   5 - Se não escolheu template: cria escala com plantões vazios seguindo horários fixos da instituição                   |
 |                                                                                                      |                                 6 - Redireciona o líder de escala para a tela de detalhes da nova escala                                 |
 
+## Fluxo Alternativo I - [Líder quer Template]
 
-## Fluxo Alternativo I - [Editar dados da escala]
+| Ações do ator                                                                         | Ações do sistema                                                                                                                              |
+| :-----------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------------------------------------------------: |
+| 3.1 - Preenche os dados do formulário informando que quer template e confirma criação |                                                                                                                                               |
+|                                                                                       | 3.2 - Recebe os dados informados, valida campos obrigatórios e consistência                                                                   |
+|                                                                                       | 3.3 - Cria nova escala replicando os plantões com alocações fixas do template, adaptadores ao mês de referência                               |
+|                                                                                       | 3.4 - Redireciona o líder de escala para a tela de detalhes da nova escala                                                                    |
+
+## Fluxo Alternativo II - [Editar dados da escala]
 
 |                      Ações do ator                      |                    Ações do sistema                    |
 | :-----------------------------------------------------: | :----------------------------------------------------: |
@@ -29,15 +36,29 @@
 |                                                         | 1.4 - Sistema valida alterações e salva os novos dados |
 
 
-## Fluxo Alternativo II - [Excluir escala]
+## Fluxo Alternativo III - [Excluir escala]
 
 |                       Ações do ator                      |                                      Ações do sistema                                      |
 | :------------------------------------------------------: | :----------------------------------------------------------------------------------------: |
-| 2.1 - Na tela de detalhes da escala, seleciona “Excluir” |                                                                                            |
-|                                                          | 2.2 - Verifica se a escala ainda não foi publicada e não há plantões prestes a serem pagos |
-|                                                          |                    2.3 - Remove a escala e confirma exclusão ao usuário                    |
+| 1.a - Na tela de detalhes da escala, seleciona “Excluir” |                                                                                            |
+|                                                          | 1.b - Verifica se a escala ainda não foi publicada e não há plantões prestes a serem pagos |
+|                                                          |                    1.c - Remove a escala e confirma exclusão ao usuário                    |
 
+## Fluxo Alternativo IV - [Detalhar escala]
 
+|                       Ações do ator                                                |                                      Ações do sistema                                 |
+| :--------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------: |
+| 1.a2 - Seleciona escala específica da listagem de escalas ou plantão de referencia |                                                                                       |
+|                                                                                    | 1.b2 - Recupera os dados da escala, plantão, alocação e profissionais para amostragem |
+| 1.c2 - Visualiza escala montada                                                    |                                                                                       |
+
+## Fluxo Alternativo V - [Listar escala]
+
+|                       Ações do ator        |                                      Ações do sistema        |
+| :----------------------------------------: | :----------------------------------------------------------: |
+| 1.a3 - Seleciona opção de "Minhas escalas" |                                                              |
+|                                            | 1.b3 - Recupera escalas vinculadas ao lider de escala logado |
+| 1.c3 - Visualiza listagem de escalas       |                                                              |
 
 ## Fluxo Exceção I - [Falha na validação dos dados]
 
