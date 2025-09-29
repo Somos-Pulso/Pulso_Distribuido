@@ -1,14 +1,14 @@
 # CDU009. Receber Notificações e Alertas
 
-* **Ator principal**: Usuário
-* **Atores secundários**: Sistema
-* **Resumo**: Permite ao usuário visualizar notificações e alertas relacionados à sua conta, receber atualizações em tempo real e acessar detalhes completos de cada notificação.
-* **Pré-condição**: Usuário autenticado no sistema e com sessão ativa.
-* **Pós-condição**: O usuário visualiza notificações novas e antigas, podendo consultar detalhes completos de cada alerta.
+- **Ator principal**: Usuário
+- **Atores secundários**: Sistema
+- **Resumo**: Permite ao usuário visualizar notificações e alertas relacionados à sua conta, receber atualizações em tempo real e acessar detalhes completos de cada notificação.
+- **Pré-condição**: Usuário autenticado no sistema e com sessão ativa.
+- **Pós-condição**: O usuário visualiza notificações novas e antigas, podendo consultar detalhes completos de cada alerta.
 
 ## Fluxo Principal
 
-|                                ator                                           |                                                 sistema                                       |
+|                              Ações do ator                                    |                                            Ações do ator                                      |
 | :---------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------: |
 |                         1 - Acessa o sistema                                  |                                                                                               |
 |                                                                               |                                  2 - Carrega notificações                                     |
