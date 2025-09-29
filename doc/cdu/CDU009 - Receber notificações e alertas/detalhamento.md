@@ -41,3 +41,12 @@
 | 0.1 - Acessa a área de notificações |                                 ...                                |
 |                 ...                 | 0.2 - Exibe mensagem: “Nenhuma notificação disponível no momento.” |
 
+## Protótipo
+
+
+## Diagrama de Interação (Sequência ou Comunicação)
+
+
+
+## Diagrama de Classes de Projeto
+
