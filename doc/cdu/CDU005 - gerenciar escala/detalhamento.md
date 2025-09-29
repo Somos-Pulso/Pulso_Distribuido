@@ -78,8 +78,18 @@
 
 ## Protótipo
 
+## Diagramas de Atividade
+
+<img width="2409" height="1137" alt="CDU - Criar Escala" src="https://github.com/user-attachments/assets/19f32005-36ae-4e19-95a4-db2ed864b514" />
+
+<img width="1165" height="1120" alt="CDU - Atualizar Escala" src="https://github.com/user-attachments/assets/2c21d09a-4eb4-497f-a9a4-248708f99bad" />
+
+<img width="892" height="950" alt="CDU - Excluir Escala" src="https://github.com/user-attachments/assets/5dbfde39-c139-49ae-91bd-6a49046c06ef" />
+
+<img width="758" height="901" alt="CDU - Detalhar Escala" src="https://github.com/user-attachments/assets/e8262972-72ee-40ac-8abf-f715b74ff790" />
+
+<img width="757" height="949" alt="CDU - Listar Escalas" src="https://github.com/user-attachments/assets/48c16439-004f-4504-988d-681b8d0d8168" />
+
 ## Diagrama de Interação (Sequência ou Comunicação)
-
-
 
 ## Diagrama de Classes de Projeto
