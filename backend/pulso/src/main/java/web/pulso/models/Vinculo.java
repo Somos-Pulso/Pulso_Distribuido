@@ -28,36 +28,5 @@ public class Vinculo {
     @Column(name = "tipo_vinculo")
     private TipoVinculo tipoVinculo;
 
-    // Getters e Setters
-    public Long getId() {
-        return id;
-    }
 
-    public void setId(Long id) {
-        this.id = id;
-    }
-
-    public Usuario getUsuario() {
-        return usuario;
-    }
-
-    public void setUsuario(Usuario usuario) {
-        this.usuario = usuario;
-    }
-
-    public Instituicao getInstituicao() {
-        return instituicao;
-    }
-
-    public void setInstituicao(Instituicao instituicao) {
-        this.instituicao = instituicao;
-    }
-
-    public TipoVinculo getTipoVinculo() {
-        return tipoVinculo;
-    }
-
-    public void setTipoVinculo(TipoVinculo tipoVinculo) {
-        this.tipoVinculo = tipoVinculo;
-    }
 }
