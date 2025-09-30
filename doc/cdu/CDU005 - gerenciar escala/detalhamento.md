@@ -23,7 +23,7 @@
 | :-----------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------------------------------------------------: |
 | 3.1 - Preenche os dados do formulário informando que quer template e confirma criação |                                                                                                                                               |
 |                                                                                       | 3.2 - Recebe os dados informados, valida campos obrigatórios e consistência                                                                   |
-|                                                                                       | 3.3 - Cria nova escala replicando os plantões com alocações fixas do template, adaptadores ao mês de referência                               |
+|                                                                                       | 3.3 - Cria nova escala replicando os plantões e se tiverem, suas alocações fixas e combinadas do template, adaptadores ao mês de referência   |
 |                                                                                       | 3.4 - Redireciona o líder de escala para a tela de detalhes da nova escala                                                                    |
 
 ## Fluxo Alternativo II - [Editar dados da escala]
@@ -76,19 +76,31 @@
 |                                                             | 1.a.2 - Verifica se a escala ainda não foi publicada                                         |
 |                                                             | 1.a.3 - Exibe mensagem de erro informando que não é possível excluir uma escala já publicada |
 
+## Fluxo Exceção III - [Detalhar escala inexistente]
+
+|                       Ações do ator                                                  |                                      Ações do sistema                                   |
+| :----------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------: |
+| 1.a2.1 - Seleciona escala específica da listagem de escalas ou plantão de referencia |                                                                                         |
+|                                                                                      | 1.a2.2 - Exibe mensagem de erro informando que não foi possível encontrar escala        |
+
 ## Protótipo
 
 ## Diagramas de Atividade
 
-<img width="2409" height="1137" alt="CDU - Criar Escala" src="https://github.com/user-attachments/assets/19f32005-36ae-4e19-95a4-db2ed864b514" />
+### Criar Escala
+<img src="https://github.com/user-attachments/assets/cedd797b-77e3-4428-9dbe-8e48941f0481" alt="CDU - Criar Escala" width="800"/>
 
-<img width="1165" height="1120" alt="CDU - Atualizar Escala" src="https://github.com/user-attachments/assets/2c21d09a-4eb4-497f-a9a4-248708f99bad" />
+### Listar Escalas
+<img src="https://github.com/user-attachments/assets/8e378210-73b0-428e-bbfe-af867fac944d" alt="CDU - Listar Escalas" width="800"/>
 
-<img width="892" height="950" alt="CDU - Excluir Escala" src="https://github.com/user-attachments/assets/5dbfde39-c139-49ae-91bd-6a49046c06ef" />
+### Detalhar Escala
+<img src="https://github.com/user-attachments/assets/d0dd131c-4ca6-4d93-a783-6a1d49ae1f1b" alt="CDU - Detalhar Escala" width="800"/>
 
-<img width="758" height="901" alt="CDU - Detalhar Escala" src="https://github.com/user-attachments/assets/e8262972-72ee-40ac-8abf-f715b74ff790" />
+### Atualizar Escala
+<img src="https://github.com/user-attachments/assets/5b867aa1-5e3b-4163-8c32-c6ee07a1f17f" alt="CDU - Atualizar Escala" width="800"/>
 
-<img width="757" height="949" alt="CDU - Listar Escalas" src="https://github.com/user-attachments/assets/48c16439-004f-4504-988d-681b8d0d8168" />
+### Excluir Escala
+<img src="https://github.com/user-attachments/assets/6b02243d-0530-40f6-a922-7bc134894e76" alt="CDU - Excluir Escala" width="800"/>
 
 ## Diagrama de Interação (Sequência ou Comunicação)
 
