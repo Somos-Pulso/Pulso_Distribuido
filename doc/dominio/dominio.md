@@ -1,5 +1,5 @@
 # Modelo de Domínio
-<img width="2542" height="1428" alt="dominio" src="https://github.com/user-attachments/assets/35d7e65e-b4bd-4667-bafb-bee82846a537" />
+<img width="2784" height="1428" alt="dominio" src="https://github.com/user-attachments/assets/2ca4fd82-fc65-4ef9-b987-087f401ae241" />
 
 ## Glossário
 
