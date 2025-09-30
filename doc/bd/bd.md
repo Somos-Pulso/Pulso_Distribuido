@@ -1,10 +1,10 @@
 # Modelo de Dados
 
 ## Diagrama ER
-<img width="2001" height="1061" alt="pulsodistribuido drawio (2)" src="https://github.com/user-attachments/assets/5262ee62-d9c9-4bf3-b116-e04c2c12207c" />
+<img width="2001" height="1061" alt="pulsodistribuido drawio (3)" src="https://github.com/user-attachments/assets/ff67aa76-6430-4a68-944c-9ddc92be9356" />
 
 ## Modelo Relacional
-<img width="6276" height="2892" alt="erdplus (5)" src="https://github.com/user-attachments/assets/a9dcef57-08af-4b05-9b9c-dbd1b75547c4" />
+<img width="6276" height="2892" alt="erdplus (6)" src="https://github.com/user-attachments/assets/78939258-7326-4d71-983e-e0f2b5ea1e97" />
 
 ## Dicionário de Dados
 
@@ -174,12 +174,12 @@
 
 **Descrição** : Representa a ligação entre o plantão e o profissional que pegou ele.
 
-| Colunas         | Descrição                                                                   | Tipo de Dado | Tamanho | Null | PK | FK | Unique | Identity | Default | Check    |
-| --------------- | --------------------------------------------------------------------------- | ------------ | ------- | ---- | -- | -- | ------ | -------- | ------- | -------- |
-| id_alocação     | Identificador único da alocação                                             | \[int]       |         | ☐    | ☑  | ☐  | ☐      | ☑        |         | Not null |
-| fixo            | Confirmação de que o profissional vai ficar se manter no horário do plantão | \[boolean]   |         | ☐    | ☐  | ☐  | ☐      | ☐        |         | Not null |
-| id_plantao      | Chave ligando ao plantao                                                    | \[int]       |         | ☐    | ☐  | ☑  | ☑      | ☐        |         | Not null |
-| id_profissional | Chave ligando ao profissional                                               | \[int]       |         | ☐    | ☐  | ☑  | ☑      | ☐        |         | Not null |
+| Colunas         | Descrição                                                                   | Tipo de Dado    | Tamanho | Null | PK | FK | Unique | Identity | Default | Check    |
+| --------------- | --------------------------------------------------------------------------- | --------------- | ------- | ---- | -- | -- | ------ | -------- | ------- | -------- |
+| id_alocação     | Identificador único da alocação                                             | \[int]          |         | ☐    | ☑  | ☐  | ☐      | ☑        |         | Not null |
+| tipo_alocacao   | Qual o tipo da alocação                                                     | \[TipoAlocacao] |         | ☐    | ☐  | ☐  | ☐      | ☐        |         | Not null |
+| id_plantao      | Chave ligando ao plantao                                                    | \[int]          |         | ☐    | ☐  | ☑  | ☑      | ☐        |         | Not null |
+| id_profissional | Chave ligando ao profissional                                               | \[int]          |         | ☐    | ☐  | ☑  | ☑      | ☐        |         | Not null |
 
 ---
 
