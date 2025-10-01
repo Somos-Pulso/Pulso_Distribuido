@@ -19,10 +19,6 @@ O <b>Pulso</b> é um sistema web para gerenciamento e organização de escalas d
       <a href="https://github.com/FlavioMatias">Flavio Matias</a>
     </td>
     <td align="center">
-      <img src="https://github.com/user-attachments/assets/9dba027f-c85c-4320-b189-033b0b7e2a47" width="150"/><br>
-      <a href="https://github.com/silva-george">George Silva</a>
-    </td>
-    <td align="center">
       <img src="https://github.com/user-attachments/assets/31d8fd8f-698d-4430-99be-64a4f83e86af" width="150"/><br>
       <a href="https://github.com/gusttavokr">Gustavo Maia</a>
     </td>
