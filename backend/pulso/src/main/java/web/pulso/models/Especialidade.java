@@ -24,9 +24,11 @@ public class Especialidade {
     @ManyToMany(mappedBy = "especialidades")
     private List<Setor> setores = new ArrayList<>();
     
-    @ManyToMany(mappedBy = "especialidades")
+    // Uma especialidade pode ter vários líderes 
+    @OneToMany(mappedBy = "especialidade")
     private List<LiderEscala> lideresEscala = new ArrayList<>();
     
-    @ManyToMany(mappedBy = "especialidades")
+    // Uma especialidade pode ter vários profissionais
+    @OneToMany(mappedBy = "especialidade")
     private List<Profissional> profissionais = new ArrayList<>();
 }

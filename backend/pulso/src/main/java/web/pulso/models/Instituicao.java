@@ -1,17 +1,29 @@
 package web.pulso.models;
-
 import jakarta.persistence.*;
 import lombok.Data;
-import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
 import java.util.List;
 
 @Data
-@EqualsAndHashCode(callSuper = true)
 @NoArgsConstructor
 @Entity
 @Table(name = "instituicoes")
-public class Instituicao extends Usuario {
+public class Instituicao {
+    
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+    
+    @Column(nullable = false)
+    private String nome;
+    
+    @Column(nullable = false)
+    private String email;
+    
+    private String telefone;
+    
+    @Column(name = "foto_perfil")
+    private String fotoPerfil;
     
     private String endereco;
     

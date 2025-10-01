@@ -8,19 +8,23 @@ import java.util.List;
 import java.util.ArrayList;
 
 @Data
-@EqualsAndHashCode(callSuper = true)
 @NoArgsConstructor
 @Entity
 @Table(name = "lideres_escala")
-public class LiderEscala extends Usuario {
+public class LiderEscala {
 
-    @ManyToMany
-    @JoinTable(
-        name = "lider_escala_especialidade",
-        joinColumns = @JoinColumn(name = "lider_escala_id"),
-        inverseJoinColumns = @JoinColumn(name = "especialidade_id")
-    )
-    private List<Especialidade> especialidades = new ArrayList<>();
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+
+    @OneToOne
+    @JoinColumn(name = "pessoa_id", nullable = false)
+    private Pessoa pessoa;
+
+    // Um líder de escala tem UMA especialidade principal
+    @ManyToOne
+    @JoinColumn(name = "especialidade_id", nullable = false)
+    private Especialidade especialidade;
 
     @OneToOne
     @JoinColumn(name = "vinculo_id", nullable = false)
