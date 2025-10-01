@@ -1,10 +1,10 @@
 # Modelo de Dados
 
 ## Diagrama ER
-<img width="2001" height="1061" alt="pulsodistribuido drawio (2)" src="https://github.com/user-attachments/assets/5262ee62-d9c9-4bf3-b116-e04c2c12207c" />
+<img width="2333" height="1123" alt="pulsodistribuido drawio (4)" src="https://github.com/user-attachments/assets/4eee7fc8-f31e-43be-a8d8-66d56654451c" />
 
 ## Modelo Relacional
-<img width="6276" height="2892" alt="erdplus (5)" src="https://github.com/user-attachments/assets/a9dcef57-08af-4b05-9b9c-dbd1b75547c4" />
+<img width="6276" height="2892" alt="erdplus (7)" src="https://github.com/user-attachments/assets/ed5d29e7-eea2-4238-8ed7-7c657c98b188" />
 
 ## Dicionário de Dados
 
@@ -17,16 +17,26 @@
 | Colunas       | Descrição                                                  | Tipo de Dado | Tamanho | Null | PK | FK | Unique | Identity | Default | Check    |
 | ------------- | ---------------------------------------------------------- | ------------ | ------- | ---- | -- | -- | ------ | -------- | ------- | -------- |
 | id_usuario    | Identificador único do usuário                             | \[int]       |         | ☐    | ☑  | ☐  | ☐      | ☑        |         | Not null |
-| nome          | Nome do usuário                                            | \[varchar]   | 100     | ☐    | ☐  | ☐  | ☐      | ☐        |         | Not null |
 | matricula     | Matrícula específica para realização do login do usuário   | \[char]      | 14      | ☐    | ☐  | ☐  | ☑      | ☐        |         | Not null |
-| email         | E-mail para contato com o usuário                          | \[varchar]   | 100     | ☐    | ☐  | ☐  | ☐      | ☐        |         | Not null |
-| telefone      | Telefone para contato com o usuário                        | \[varchar]   | 14      | ☐    | ☐  | ☐  | ☐      | ☐        |         | Not null |
-| foto_perfil   | Foto de perfil do usuário                                  | \[varchar]   | 255     | ☐    | ☐  | ☐  | ☐      | ☐        |         | Not null |
 | senha         | Senha para realização do login do usuário                  | \[varchar]   | 255     | ☐    | ☐  | ☐  | ☐      | ☐        |         | Not null |
 | ativo         | Confirmador se é um usuário ativo no sistema               | \[boolean]   |         | ☐    | ☐  | ☐  | ☐      | ☐        | True    | Not null |
 | ultimo_login  | Data guardando o ultimo login do usuário                   | \[timestamp] |         | ☐    | ☐  | ☐  | ☐      | ☐        | today   | Not null |
 | criado_em     | Data guardando quando a conta de usuário foi criada        | \[timestanp] |         | ☐    | ☐  | ☐  | ☐      | ☐        | today   | Not null |
 | atualizado_em | Data guardando o último registro de atualização do usuário | \[timestamp] |         | ☐    | ☐  | ☐  | ☐      | ☐        | today   | Not null |
+
+---
+
+### Tabela : Pessoa
+
+**Descrição** : Representa indivíduos cadastrados no sistema que possuem vínculo com um usuário. Pode assumir diferentes papéis conforme os relacionamentos estabelecidos.
+
+| Colunas     | Descrição                          | Tipo de Dado | Tamanho | Null | PK | FK | Unique | Identity | Default | Check    |
+| ----------- | ---------------------------------- | ------------ | ------- | ---- | -- | -- | ------ | -------- | ------- | -------- |
+| id_pessoa   | Identificador único da pessoa      | \[int]       |         | ☐    | ☑  | ☐  | ☐      | ☑        |         | Not null |
+| nome        | Nome da pessoa                     | \[varchar]   | 100     | ☐    | ☐  | ☐  | ☐      | ☐        |         | Not null |
+| email       | E-mail para contato com a pessoa   | \[varchar]   | 100     | ☐    | ☐  | ☐  | ☐      | ☐        |         | Not null |
+| telefone    | Telefone para contato com a pessoa | \[varchar]   | 14      | ☐    | ☐  | ☐  | ☐      | ☐        |         | Not null |
+| foto_perfil | Foto de perfil da pessoa           | \[varchar]   | 255     | ☐    | ☐  | ☐  | ☐      | ☐        |         | Not null |
 
 ---
 
@@ -69,6 +79,10 @@
 | cnpj               | CNPJ da instituição                                        | \[varchar]   | 14      | ☐    | ☐  | ☐  | ☑      | ☐        |         | Not null |
 | exige_vinculo      | Confirmador se é exigido vínculo para atuar na instituição | \[boolean]   |         | ☐    | ☐  | ☐  | ☐      | ☐        | False   | Not null |
 | id_usuario         | Chave ligando instituição ao seu usuário                   | \[varchar]   | 8       | ☐    | ☐  | ☑  | ☐      | ☐        |         | Not null |
+| nome               | Nome da instituição                                        | \[varchar]   | 100     | ☐    | ☐  | ☐  | ☐      | ☐        |         | Not null |
+| email              | E-mail para contato com a instituição                      | \[varchar]   | 100     | ☐    | ☐  | ☐  | ☐      | ☐        |         | Not null |
+| telefone           | Telefone para contato com a instituição                    | \[varchar]   | 14      | ☐    | ☐  | ☐  | ☐      | ☐        |         | Not null |
+| foto_perfil        | Foto de perfil da instituição                              | \[varchar]   | 255     | ☐    | ☐  | ☐  | ☐      | ☐        |         | Not null |
 
 ---
 
@@ -174,12 +188,12 @@
 
 **Descrição** : Representa a ligação entre o plantão e o profissional que pegou ele.
 
-| Colunas         | Descrição                                                                   | Tipo de Dado | Tamanho | Null | PK | FK | Unique | Identity | Default | Check    |
-| --------------- | --------------------------------------------------------------------------- | ------------ | ------- | ---- | -- | -- | ------ | -------- | ------- | -------- |
-| id_alocação     | Identificador único da alocação                                             | \[int]       |         | ☐    | ☑  | ☐  | ☐      | ☑        |         | Not null |
-| fixo            | Confirmação de que o profissional vai ficar se manter no horário do plantão | \[boolean]   |         | ☐    | ☐  | ☐  | ☐      | ☐        |         | Not null |
-| id_plantao      | Chave ligando ao plantao                                                    | \[int]       |         | ☐    | ☐  | ☑  | ☑      | ☐        |         | Not null |
-| id_profissional | Chave ligando ao profissional                                               | \[int]       |         | ☐    | ☐  | ☑  | ☑      | ☐        |         | Not null |
+| Colunas         | Descrição                                                                   | Tipo de Dado    | Tamanho | Null | PK | FK | Unique | Identity | Default | Check    |
+| --------------- | --------------------------------------------------------------------------- | --------------- | ------- | ---- | -- | -- | ------ | -------- | ------- | -------- |
+| id_alocação     | Identificador único da alocação                                             | \[int]          |         | ☐    | ☑  | ☐  | ☐      | ☑        |         | Not null |
+| tipo_alocacao   | Qual o tipo da alocação                                                     | \[TipoAlocacao] |         | ☐    | ☐  | ☐  | ☐      | ☐        |         | Not null |
+| id_plantao      | Chave ligando ao plantao                                                    | \[int]          |         | ☐    | ☐  | ☑  | ☑      | ☐        |         | Not null |
+| id_profissional | Chave ligando ao profissional                                               | \[int]          |         | ☐    | ☐  | ☑  | ☑      | ☐        |         | Not null |
 
 ---
 
