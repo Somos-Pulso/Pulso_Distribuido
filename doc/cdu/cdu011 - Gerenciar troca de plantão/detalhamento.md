@@ -43,7 +43,7 @@
 |                                                                            | 1.b. O sistema resgata informações da troca, plantão e médico solicitado, se tiver. |
 | 1.c. O médico visualiza dados reunidos.                                    |                                                                                     |
 
-## Fluxo Alternativo V = [Listar trocas]
+## Fluxo Alternativo V - [Listar trocas]
 | Ações do Ator                                             | Ações do Sistema                                        |
 |-----------------------------------------------------------|---------------------------------------------------------|
 | 1.a.1. O médico seleciona opção de "Minhas solicitações". |                                                         |
