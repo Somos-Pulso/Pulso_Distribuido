@@ -4,7 +4,7 @@
 | --------------- | --------------- |
 | Instituição     | Organização que oferece serviços de saúde, como hospitais, clínicas ou postos de saúde. |
 | Setor           | Área física dentro da instituição onde os plantões ocorrem, exemplo: pronto-socorro, ambulatório, UTI, centro cirúrgico. |
-| Especialidade   | Área de atuação, como clínica geral, pediatria ou cardiologia. Pode estar associada a profissionais e a instituições. |
+| Especialidade   | Área de atuação, como clínica geral, pediatria ou cardiologia. Pode estar associada a profissionais, líderes de escala e a instituições. Sendo tratado como generalista no caso de não ter uma especialidade estabelecida. |
 | Escala          | Conjunto organizado de plantões distribuídos ao longo de um período mensal. Cada escala pode agrupar um conjunto de plantões. |
 | Plantão         | Turno de atendimento médico com duração definida, exemplo: 6 horas, 8 horas, 12 horas, dentro de uma escala. |
 | Alocação        | Ato de vincular um profissional a um plantão específico. |
