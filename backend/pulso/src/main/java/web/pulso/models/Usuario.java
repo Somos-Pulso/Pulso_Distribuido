@@ -11,20 +11,17 @@ import java.util.Date;
 @AllArgsConstructor
 @Entity
 @Table(name = "usuarios")
-@Inheritance(strategy = InheritanceType.JOINED)
 public class Usuario {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    private String nome;
+    @OneToOne
+    @JoinColumn(name = "pessoa_id", nullable = true)
+    private Pessoa pessoa;
+
     private String matricula;
-    private String email;
-    private String telefone;
-    
-    @Column(name = "foto_perfil") //tratar conversão de camelcase para o banco de dados
-    private String fotoPerfil;
     
     private String senha;
     private Boolean ativo;
