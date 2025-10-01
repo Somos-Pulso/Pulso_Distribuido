@@ -2,7 +2,6 @@ package web.pulso.models;
 
 import jakarta.persistence.*;
 import lombok.Data;
-import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
 import web.pulso.models.enums.TipoPix;
 import java.time.LocalDate;
