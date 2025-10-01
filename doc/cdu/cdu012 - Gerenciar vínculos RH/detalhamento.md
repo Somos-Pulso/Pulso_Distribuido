@@ -12,7 +12,7 @@ O RH é responsável por **aprovar, reprovar, atualizar e encerrar vínculos**, 
 
 ---
 
-## 📌 Fluxo Principal
+## Fluxo Principal
 
 | Ações do Ator (RH) | Ações do Sistema |
 |---------------------|------------------|
@@ -26,7 +26,7 @@ O RH é responsável por **aprovar, reprovar, atualizar e encerrar vínculos**, 
 
 ---
 
-## 🔄 Fluxos Alternativos
+## Fluxos Alternativos
 
 ### FA01 – Aprovação de Solicitação de Vínculo
 | Ações do Ator | Ações do Sistema |
@@ -53,7 +53,7 @@ O RH é responsável por **aprovar, reprovar, atualizar e encerrar vínculos**, 
 
 ---
 
-## ⚠️ Fluxos de Exceção
+## Fluxos de Exceção
 
 ### Exceção E01 – Solicitação duplicada
 | Ações do Ator | Ações do Sistema |
