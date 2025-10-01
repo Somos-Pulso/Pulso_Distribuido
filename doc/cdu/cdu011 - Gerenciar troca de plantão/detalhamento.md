@@ -72,7 +72,7 @@
 ## Diagramas de Atividade
 
 ### Criar troca de plantão
-<img width="2720" height="1520" alt="CDU - Criar Troca de Plantao" src="https://github.com/user-attachments/assets/9dc3e21f-2f0b-4ab3-9ed4-d6e7e8ff68a9" />
+<img width="2740" height="1520" alt="CDU - Criar Troca de Plantao" src="https://github.com/user-attachments/assets/c3e7d6cd-5a78-4e31-8f8a-3f78f2054986" />
 
 ## Diagrama de Interação (Sequência ou Comunicação)
 
