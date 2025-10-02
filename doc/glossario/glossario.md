@@ -1,15 +1,25 @@
 ## Glossário
 
-| Termo           | Explicação      |
-| --------------- | --------------- |
-| Instituição     | Organização que oferece serviços de saúde, como hospitais, clínicas ou postos de saúde. |
-| Setor           | Área física dentro da instituição onde os plantões ocorrem, exemplo: pronto-socorro, ambulatório, UTI, centro cirúrgico. |
-| Especialidade   | Área de atuação, como clínica geral, pediatria ou cardiologia. Pode estar associada a profissionais, líderes de escala e a instituições. Sendo tratado como generalista no caso de não ter uma especialidade estabelecida. |
-| Escala          | Conjunto organizado de plantões distribuídos ao longo de um período mensal. Cada escala pode agrupar um conjunto de plantões. |
-| Plantão         | Turno de atendimento médico com duração definida, exemplo: 6 horas, 8 horas, 12 horas, dentro de uma escala. |
-| Alocação        | Ato de vincular um profissional a um plantão específico. |
-| Troca           | Substituição de plantões entre profissionais, podendo ocorrer de duas formas: troca dupla, onde dois médicos trocam entre si os plantões, ou repasse, onde um médico cede seu plantão a outro médico sem receber outro em troca. |
-| Lider de Escala | Ator responsável por gerenciar as escalas e plantões, definindo quem ocupa cada plantão e disponibilizando-os aos profisisonais conforme a necessidade da instituição. |
-| Profissional    | Pessoa habilitada para atuar na prestação de serviços de saúde dentro de uma instituição. No escopo atual do projeto, refere-se especificamente ao médico que participa de escalas e plantões. |
-| Usuário         | Entidade com credenciais de acesso ao sistema. Pode representar diferentes papéis, como líder de escala, profissional ou instituição, e tem permissões conforme sua função. |
-| Notificação     | Mensagem enviada pelo sistema para informar o usuário sobre eventos relevantes, como alocação em plantão, trocas, alterações na escala, ou outras atualizações importantes. |
+| Termo              | Explicação                                                                                                                                                                                                        |
+| ------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Instituição        | Organização que oferece serviços de saúde, como hospitais, clínicas ou postos de saúde, podendo exigir vínculo ou não.                                                                                            |
+| Setor              | Área física dentro da instituição onde os plantões ocorrem, exemplo: pronto-socorro, ambulatório, UTI, centro cirúrgico.                                                                                          |
+| Especialidade      | Área de atuação, como clínica geral, pediatria ou cardiologia. Pode estar associada a profissionais, líderes de escala e a instituições. É tratada como generalista quando não há uma especialidade definida.     |
+| Escala             | Conjunto organizado de plantões distribuídos ao longo de um período mensal. Cada escala pode agrupar um conjunto de plantões.                                                                                     |
+| Escala Publicada   | Escala finalizada em que todos os plantões já foram definidos, incluindo as alocações fixas e combinadas. Seus plantões disponíveis ficam visíveis aos profissionais e podem ser assumidos (pegos) pelos médicos. |
+| Escala em Rascunho | Escala ainda em fase de definição e edição, visível apenas para o líder de escala. Seus plantões não podem ser visualizados pelos profissionais nem assumidos.                                                    |
+| Plantão            | Turno de atendimento médico com duração definida, exemplo: 6 horas, 8 horas, 12 horas, dentro de uma escala.                                                                                                      |
+| Plantão Disponível | Plantão sem profissional alocado, aberto para que médicos possam assumir ou para ser definido pelo líder de escala.                                                                                               |
+| Alocação           | Ato de vincular um profissional a um plantão específico. Pode ocorrer de diferentes formas, como pega, combinada ou fixa.                                                                                         |
+| Alocação Pega      | Modalidade de alocação em que o médico assume ativamente o plantão disponível.                                                                                                                                    |
+| Alocação Combinada | Modalidade de alocação em que o líder de escala acorda previamente com um médico para que ele fique responsável por determinados plantões recorrentes.                                                            |
+| Alocação Fixo      | Modalidade de alocação em que o plantão é destinado a profissionais CLT, ficando previamente reservado a eles como parte do contrato de trabalho.                                                                 |
+| Troca              | Modalidade de substituição de plantão em que dois médicos trocâm entre si suas alocações previamente definidas.                                                                                                   |
+| Repasse            | Modalidade de substituição em que um médico libera seu plantão para que outro assuma, transferindo a alocação.                                                                                                    |
+| Lider de Escala    | Profissional responsável por gerenciar as escalas e plantões, definindo quem ocupa cada plantão e disponibilizando-os conforme a necessidade da instituição.                                                      |
+| Profissional       | Pessoa habilitada para atuar na prestação de serviços de saúde dentro de uma instituição. No escopo atual do projeto, refere-se especificamente ao médico que participa de escalas e plantões.                    |
+| Usuário            | Entidade com credenciais de acesso ao sistema. Pode representar diferentes papéis, como líder de escala, profissional ou instituição, com permissões específicas conforme sua função.                             |
+| Notificação        | Mensagem enviada pelo sistema para informar o usuário sobre eventos relevantes, como alocações, trocas, alterações na escala ou outras atualizações.                                                              |
+| Vínculo            | Relação entre um profissional ou líder de escala e uma instituição. Define como o profissional se relaciona contratualmente ou funcionalmente com a organização.                                                  |
+| Vínculo PJ         | Vínculo de prestação de serviço por pessoa jurídica, geralmente utilizado por médicos autônomos ou contratados como pessoa jurídica.                                                                              |
+| Vínculo CLT        | Vínculo formal de trabalho regido pela Consolidação das Leis do Trabalho (CLT), geralmente aplicado a profissionais empregados diretamente pela instituição.                                                      |
