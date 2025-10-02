@@ -58,6 +58,7 @@
 ## Protótipo
 
 ## Diagrama de Atividade
+<img width="2324" height="1438" alt="CDU - Pegar Plantao" src="https://github.com/user-attachments/assets/ed3cb212-2162-491c-8cb5-95051d90dfac" />
 
 ## Diagrama de Interação (Sequência ou Comunicação)
 
