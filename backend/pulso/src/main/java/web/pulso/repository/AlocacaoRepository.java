@@ -5,7 +5,6 @@ import org.springframework.stereotype.Repository;
 import web.pulso.models.Alocacao;
 import web.pulso.models.Profissional;
 import web.pulso.models.Plantao;
-import java.time.LocalDateTime;
 import java.util.List;
 import java.util.Optional;
 
@@ -16,7 +15,7 @@ public interface AlocacaoRepository extends JpaRepository<Alocacao, Long> {
     List<Alocacao> findByPlantao(Plantao plantao);
     List<Alocacao> findByProfissionalId(Long profissionalId);
     List<Alocacao> findByPlantaoId(Long plantaoId);
-    List<Alocacao> findByDataHoraAlocacaoBetween(LocalDateTime inicio, LocalDateTime fim);
+    List<Alocacao> findByFixa(Boolean fixa);
     Optional<Alocacao> findByProfissionalIdAndPlantaoId(Long profissionalId, Long plantaoId);
     
 }

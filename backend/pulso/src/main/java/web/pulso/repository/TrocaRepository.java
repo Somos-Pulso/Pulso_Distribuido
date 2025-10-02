@@ -6,18 +6,17 @@ import web.pulso.models.Troca;
 import web.pulso.models.Profissional;
 import web.pulso.models.Plantao;
 import web.pulso.models.enums.StatusTroca;
-import java.time.LocalDateTime;
 import java.util.List;
 
 @Repository
 public interface TrocaRepository extends JpaRepository<Troca, Long> {
     
-    List<Troca> findByProfissionalSolicitante(Profissional profissional);
+    List<Troca> findByProfissional(Profissional profissional);
     List<Troca> findByPlantao(Plantao plantao);
     List<Troca> findByStatus(StatusTroca status);
-    List<Troca> findByProfissionalSolicitanteId(Long profissionalId);
+    List<Troca> findByProfissionalId(Long profissionalId);
     List<Troca> findByPlantaoId(Long plantaoId);
-    List<Troca> findByDataHoraSolicitacaoBetween(LocalDateTime inicio, LocalDateTime fim); //verificar se é entre ou maior que a dataHora
-    List<Troca> findByStatusAndProfissionalSolicitanteId(StatusTroca status, Long profissionalId);//filtrar por status(confirmado, pendente ou recusado) e profissional solicitante
+    List<Troca> findByTipo(String tipo);
+    List<Troca> findByStatusAndProfissionalId(StatusTroca status, Long profissionalId);
     
 }
