@@ -8,27 +8,27 @@
 
 ## Fluxo Principal
 
-|                                             Ações do ator                                            |                                                             Ações do sistema                                                             |
-| :--------------------------------------------------------------------------------------------------: | :--------------------------------------------------------------------------------------------------------------------------------------: |
-|                                   1 - Acessa a opção “Criar Escala”.                                  |                                                                                                                                          |
-|                                                                                                      | 2 - Exibe formulário para criação da escala com campos: nome da escala, mês de referência, especialidade, setor e opção de usar template. |
-|                        3 - Preenche os dados do formulário e confirma. criação                        |                                                                                                                                          |
-|                                                                                                      |                                 4 - Recebe os dados informados, valida campos obrigatórios e consistência.                                |
-|                                                                                                      |                   5 - Se não escolheu template: cria escala com plantões vazios seguindo horários fixos da instituição.                   |
-|             6 - Visualiza detalhamento da nova escala criada com seus plantões.                                                                                         |                                 |
+| Ações do Ator                                                       | Ações do Sistema                                                                                                                          |
+| :-----------------------------------------------------------------: | :---------------------------------------------------------------------------------------------------------------------------------------: |
+| 1 - Acessa a opção “Criar Escala”.                                  |                                                                                                                                           |
+|                                                                     | 2 - Exibe formulário para criação da escala com campos: nome da escala, mês de referência, especialidade, setor e opção de usar template. |
+| 3 - Preenche os dados do formulário e confirma. criação             |                                                                                                                                           |
+|                                                                     | 4 - Recebe os dados informados, valida campos obrigatórios e consistência.                                                                |
+|                                                                     | 5 - Se não escolheu template: cria escala com plantões vazios seguindo horários fixos da instituição.                                     |
+| 6 - Visualiza detalhamento da nova escala criada com seus plantões. |                                                                                                                                           |
 
 ## Fluxo Alternativo I - [Líder quer Template]
 
-| Ações do ator                                                                         | Ações do sistema                                                                                                                              |
-| :-----------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------------------------------------------------: |
-| 3.1 - Preenche os dados do formulário informando que quer template e confirma criação. |                                                                                                                                               |
-|                                                                                       | 3.2 - Recebe os dados informados, valida campos obrigatórios e consistência.                                                                   |
-|                                                                                       | 3.3 - Cria nova escala replicando os plantões e se tiverem, suas alocações fixas e combinadas do template, adaptadores ao mês de referência.   |
-| 3.4 - Visualiza detalhamento da nova escala criada com seus plantões com informações preenchidas.                                                                                      |                                                                     |
+| Ações do Ator | Ações do Sistema |
+| :-----------: | :--------------: |
+| 3.1 - Preenche os dados do formulário informando que quer template e confirma criação. | |
+| | 3.2 - Recebe os dados informados, valida campos obrigatórios e consistência. |
+| | 3.3 - Cria nova escala replicando os plantões e se tiverem, suas alocações fixas e combinadas do template, adaptadores ao mês de referência.   |
+| 3.4 - Visualiza detalhamento da nova escala criada com seus plantões com informações preenchidas. | |
 
 ## Fluxo Alternativo II - [Editar dados da escala]
 
-|                      Ações do ator                      |                    Ações do sistema                    |
+|                      Ações do Ator                      |                    Ações do Sistema                    |
 | :-----------------------------------------------------: | :----------------------------------------------------: |
 | 1.1 - Na tela de detalhes da escala, seleciona “Editar”. |                                                        |
 |                                                         |  1.2 - Exibe formulário de edição dos dados da escala.  |
@@ -38,7 +38,7 @@
 
 ## Fluxo Alternativo III - [Excluir escala]
 
-|                       Ações do ator                      |                                      Ações do sistema                                      |
+|                       Ações do Ator                      |                                      Ações do Sistema                                      |
 | :------------------------------------------------------: | :----------------------------------------------------------------------------------------: |
 | 1.a - Na tela de detalhes da escala, seleciona “Excluir”. |                                                                                            |
 |                                                          | 1.b - Verifica se a escala ainda não foi publicada.                                         |
@@ -47,7 +47,7 @@
 
 ## Fluxo Alternativo IV - [Detalhar escala]
 
-|                       Ações do ator                                                |                                      Ações do sistema                                 |
+|                       Ações do Ator                                                |                                      Ações do Sistema                                 |
 | :--------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------: |
 | 1.a2 - Seleciona escala específica da listagem de escalas ou plantão de referencia. |                                                                                       |
 |                                                                                    | 1.b2 - Recupera os dados da escala, plantão, alocação e profissionais para amostragem. |
@@ -55,7 +55,7 @@
 
 ## Fluxo Alternativo V - [Listar escala]
 
-|                       Ações do ator        |                                      Ações do sistema        |
+|                       Ações do Ator        |                                      Ações do Sistema        |
 | :----------------------------------------: | :----------------------------------------------------------: |
 | 1.a3 - Seleciona opção de "Minhas escalas". |                                                              |
 |                                            | 1.b3 - Recupera escalas vinculadas ao lider de escala logado. |
@@ -63,14 +63,14 @@
 
 ## Fluxo Exceção I - [Falha na validação dos dados]
 
-|                                    Ações do ator                                   |                             Ações do sistema                            |
+|                                    Ações do Ator                                   |                             Ações do Sistema                            |
 | :--------------------------------------------------------------------------------: | :---------------------------------------------------------------------: |
 | 0.1 - Preenche formulário de criação da escala com dados incorretos ou incompletos. |                                                                         |
 |                                                                                    | 0.2 - Exibe mensagem de erro destacando os campos inválidos ou ausentes. |
 
 ## Fluxo Exceção II - [Excluir escala já publicada]
 
-|                                    Ações do ator            |                             Ações do sistema                                                 |
+|                                    Ações do Ator            |                             Ações do Sistema                                                 |
 | :---------------------------------------------------------: | :------------------------------------------------------------------------------------------: |
 | 1.a.1 - Na tela de detalhes da escala, seleciona “Excluir”.  |                                                                                              |
 |                                                             | 1.a.2 - Verifica se a escala ainda não foi publicada.                                         |
@@ -78,7 +78,7 @@
 
 ## Fluxo Exceção III - [Detalhar escala inexistente]
 
-|                       Ações do ator                                                  |                                      Ações do sistema                                   |
+|                       Ações do Ator                                                  |                                      Ações do Sistema                                   |
 | :----------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------: |
 | 1.a2.1 - Seleciona escala específica da listagem de escalas ou plantão de referencia. |                                                                                         |
 |                                                                                      | 1.a2.2 - Exibe mensagem de erro informando que não foi possível encontrar escala.        |

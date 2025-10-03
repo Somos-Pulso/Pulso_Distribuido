@@ -10,7 +10,7 @@
 
 ## Fluxo Principal
 
-|                        Ações do ator                               |                              Ações do sistema                                    |
+|                        Ações do Ator                               |                              Ações do Sistema                                    |
 | :----------------------------------------------------------------: | :------------------------------------------------------------------------------: |
 |         0 - Acessa a tela de detalhamento da escala.                |                                                                                  |
 |                                                                    |                 1 - Exibe os horários disponíveis na escala.                      |
@@ -22,7 +22,7 @@
 
 ## Fluxo Alternativo I – [Atualizar plantão existente]
 
-|                  Ações do ator                 |                                Ações do sistema                                 |
+|                  Ações do Ator                 |                                Ações do Sistema                                 |
 | :--------------------------------------------: | :-----------------------------------------------------------------------------: |
 |  1.1 - Clica em um plantão já criado na escala. |                                                                                 |
 |                                                | 1.2 - Exibe formulário com dados do plantão já preenchidos e médicos associados. |
@@ -32,7 +32,7 @@
 
 ## Fluxo Alternativo II – [Excluir plantão]
 
-|                     Ações do ator                      |                     Ações do sistema                  |
+|                     Ações do Ator                      |                     Ações do Sistema                  |
 | :----------------------------------------------------: | :---------------------------------------------------: |
 | 1.1.1 - Clica em um plantão existente.                  |                                                       |
 |            1.1.2 - Seleciona a opção excluir.           |                                                       |
@@ -40,7 +40,7 @@
 
 ## Fluto Alternativo III - [Detalhar plantão]
 
-| Ações do ator                    | Ações do sistema                                                                   |
+| Ações do Ator                    | Ações do Sistema                                                                   |
 | :------------------------------: | :--------------------------------------------------------------------------------: |
 | 1.a - Seleciona um plantão.       |                                                                                    |
 |                                  | 1.b - Busca pelo plantão na base de dados junto com suas alocações e profissionais. |
@@ -48,21 +48,21 @@
 
 ## Fluxo Exceção I - [Criando um plantão para um horário/dia/setor de plantão já existente]
 
-|                        Ações do ator                               |                              Ações do sistema                                                                 |
+|                        Ações do Ator                               |                              Ações do Sistema                                                                 |
 | :----------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------------------: |
 |         2.1 - Seleciona um horário em determinado dia.              |                                                                                                               |
 |                                                                    |      2.2 - Exibe mensagem de erro informando que não é possível criar plantão com horário/dia/setor repetidos. |
 
 ## Fluxo Exceção II - [Removendo plantão já pego ou com data passada]
 
-|                        Ações do ator                               |                              Ações do sistema                                                                   |
+|                        Ações do Ator                               |                              Ações do Sistema                                                                   |
 | :----------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------------------: |
 |         1.1.2.1 - Seleciona a opção excluir.                        |                                                                                                                 |
 |                                                                    |      1.1.2.2 - Exibe mensagem de erro informando que não é possível remover plantão já pego ou com data passada. |
 
 ## Fluxo Exceção III - [Buscando plantão inexistente]
 
-|                        Ações do ator                               |                              Ações do sistema                                                          |
+|                        Ações do Ator                               |                              Ações do Sistema                                                          |
 | :----------------------------------------------------------------: | :----------------------------------------------------------------------------------------------------: |
 |         1.a - Seleciona um plantão.                                 |                                                                                                        |
 |                                                                    |      1.a.1 - Exibe mensagem de erro informando que não foi possível encontrar plantão na base de dados. |
