@@ -1,4 +1,4 @@
-# CDU009. Consultar Notificações e Alertas
+# CDU004. Consultar Notificações e Alertas
 
 - **Ator principal**: Usuário
 - **Atores secundários**: Sistema
