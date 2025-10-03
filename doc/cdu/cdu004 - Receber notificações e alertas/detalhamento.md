@@ -1,4 +1,4 @@
-# CDU009. Receber Notificações e Alertas
+# CDU009. Consultar Notificações e Alertas
 
 - **Ator principal**: Usuário
 - **Atores secundários**: Sistema
@@ -8,32 +8,44 @@
 
 ## Fluxo Principal
 
-|                              Ações do ator                                    |                                            Ações do ator                                      |
-| :---------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------: |
-|                         1 - Acessa o sistema                                  |                                                                                               |
-|                                                                               |                                  2 - Carrega notificações                                     |
-| 3 - Visualiza lista de notificações na tela de noficações ou pelo atalho      |                                                                                               |
-|                                                                               |                4 - Exibe notificações com resumo, data/hora e status de leitura               |
-|                 5 - Clica em uma notificação para ver detalhes                |                                                                                               |
-|                                                                               |  6 - Exibe tela de detalhes da notificação, incluindo informações completas e possíveis ações |
-|              7 - Permanece conectado e novas notificações chegam              |                                                                                               |
-|                                                                               |                  8 - sistema atualiza novas notificações de forma assincrona                  |
+| Ações do Ator                                              | Ações do Sistema                                                                             |
+| :--------------------------------------------------------: | :------------------------------------------------------------------------------------------: |
+| 1 - Seleciona notificação específica de interesse.         |                                                                                              |
+|                                                            | 2 - Valida notificação e resgata seus dados, entidades relacionadas e as informa ao usuário. |
+| 3 - Visualiza dados da notificação e ao que ela se refere. |                                                                                              |
 
+## Fluxo Alternativo I - [Listar notificações]
 
-## Fluxo Alternativo I - [Filtro ou busca de notificações]
+| Ações do Ator                                   | Ações do Sistema                                                                       |
+| :---------------------------------------------: | :------------------------------------------------------------------------------------: |
+| 1.1 - Seleciona opção de "Minhas notificações". |                                                                                        |
+|                                                 | 1.2 - Resgata usuário logado e notificações vinculadas a ele, com informações basicas. |
+| 1.3 - Visualiza lista de notificações.          |                                                                                        |
 
-|                        Ações do ator                        |                               Ações do sistema                               |
-| :---------------------------------------------------------: | :--------------------------------------------------------------------------: |
-| 3.1 - Aplica filtro por tipo, data ou status da notificação |                                                                              |
-|                                                             | 3.2 - Atualiza a lista de notificações de acordo com os critérios informados |
+## Fluxo Alternativo II - [Listar notificações pelo ícone]
 
+| Ações do Ator                                                    | Ações do Sistema                                                                       |
+| :--------------------------------------------------------------: | :------------------------------------------------------------------------------------: |
+| 1.a - Seleciona ícone de notificações na parte superior da tela. |                                                                                        |
+|                                                                  | 1.b - Resgata usuário logado e notificações vinculadas a ele, com informações basicas. |
+| 1.c - Visualiza lista de notificações de forma reduzida.         |                                                                                        |
+
+## Fluxo Exceção I - [Detalhar notificação não relacionada ao usuário logado]
+
+|                        Ações do Ator          |                               Ações do Sistema                                                                                                  |
+| :-------------------------------------------: | :---------------------------------------------------------------------------------------------------------------------------------------------: |
+| 1.aa - Acessa notificação não vinculada a si. |                                                                                                                                                 |
+|                                               | 1.ab - Valida notificação e exibe erro informando que não é possível acessar uma notificação que não foi direcionada para o usuário em questão. |
+
+## Fluxo Exceção II - [Detalhar notificação não existente]
+
+|                        Ações do Ator          |                               Ações do Sistema                                                 |
+| :-------------------------------------------: | :--------------------------------------------------------------------------------------------: |
+| 1.aaa - Acessa notificação não registrada.     |                                                                                               |
+|                                               | 1.aab - Valida notificação e exibe erro informando que não foi possível encontrar notificação. |
 
 ## Protótipo
 
-
 ## Diagrama de Interação (Sequência ou Comunicação)
 
-
-
 ## Diagrama de Classes de Projeto
-
