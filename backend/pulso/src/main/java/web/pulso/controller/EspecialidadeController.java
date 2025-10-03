@@ -3,11 +3,15 @@ package web.pulso.controller;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+import web.pulso.dtos.request.EspecialidadeRequestDTO;
+import web.pulso.dtos.response.EspecialidadeResponseDTO;
+import web.pulso.mappers.EspecialidadeMapper;
 import web.pulso.models.Especialidade;
 import web.pulso.service.EspecialidadeService;
 
 import java.util.List;
 import java.util.Optional;
+import java.util.stream.Collectors;
 
 @RestController
 @RequestMapping("/api/especialidades")
@@ -20,30 +24,32 @@ public class EspecialidadeController {
     }
 
     @PostMapping
-    public ResponseEntity<Especialidade> criarEspecialidade(@RequestBody Especialidade especialidade) {
+    public ResponseEntity<EspecialidadeResponseDTO> criarEspecialidade(@RequestBody EspecialidadeRequestDTO especialidadeRequestDTO) {
+        Especialidade especialidade = EspecialidadeMapper.toEntity(especialidadeRequestDTO);
         Especialidade especialidadeSalva = especialidadeService.salvar(especialidade);
-        return ResponseEntity.status(HttpStatus.CREATED).body(especialidadeSalva);
+        EspecialidadeResponseDTO responseDTO = EspecialidadeMapper.toResponseDTO(especialidadeSalva);
+        return ResponseEntity.status(HttpStatus.CREATED).body(responseDTO);
     }
 
     @GetMapping
-    public ResponseEntity<List<Especialidade>> listarEspecialidades() {
+    public ResponseEntity<List<EspecialidadeResponseDTO>> listarEspecialidades() {
         List<Especialidade> especialidades = especialidadeService.listarTodas();
-        return ResponseEntity.ok(especialidades);
+        List<EspecialidadeResponseDTO> responseDTOs = especialidades.stream()
+                .map(EspecialidadeMapper::toResponseDTO)
+                .collect(Collectors.toList());
+        return ResponseEntity.ok(responseDTOs);
     }
 
     @GetMapping("/{id}")
-    public ResponseEntity<Especialidade> buscarPorId(@PathVariable Long id) {
+    public ResponseEntity<EspecialidadeResponseDTO> buscarPorId(@PathVariable Long id) {
         Optional<Especialidade> especialidade = especialidadeService.buscarPorId(id);
-        return especialidade.map(ResponseEntity::ok)
+        return especialidade.map(esp -> ResponseEntity.ok(EspecialidadeMapper.toResponseDTO(esp)))
                            .orElse(ResponseEntity.notFound().build());
     }
 
     @DeleteMapping("/{id}")
-    public ResponseEntity<Void> deletarEspecialidade(@PathVariable Long id) {
-        if (especialidadeService.buscarPorId(id).isPresent()) {
-            especialidadeService.deletar(id);
-            return ResponseEntity.noContent().build();
-        }
-        return ResponseEntity.notFound().build();
+    public ResponseEntity<Void> deletar(@PathVariable Long id) {
+        especialidadeService.deletar(id);
+        return ResponseEntity.noContent().build();
     }
 }

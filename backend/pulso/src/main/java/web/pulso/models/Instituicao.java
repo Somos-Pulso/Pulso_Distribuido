@@ -37,4 +37,8 @@ public class Instituicao {
 
     @OneToMany(mappedBy = "instituicao", fetch = FetchType.LAZY)
     private List<Setor> setores;
+
+    @OneToOne
+    @JoinColumn(name = "usuario_id")
+    private Usuario usuario;
 }

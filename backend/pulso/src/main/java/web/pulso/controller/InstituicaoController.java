@@ -3,11 +3,15 @@ package web.pulso.controller;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+import web.pulso.dtos.request.InstituicaoRequestDTO;
+import web.pulso.dtos.response.InstituicaoResponseDTO;
+import web.pulso.mappers.InstituicaoMapper;
 import web.pulso.models.Instituicao;
 import web.pulso.service.InstituicaoService;
 
 import java.util.List;
 import java.util.Optional;
+import java.util.stream.Collectors;
 
 @RestController
 @RequestMapping("/api/instituicoes")
@@ -20,21 +24,26 @@ public class InstituicaoController {
     }
 
     @PostMapping
-    public ResponseEntity<Instituicao> criarInstituicao(@RequestBody Instituicao instituicao) {
+    public ResponseEntity<InstituicaoResponseDTO> criarInstituicao(@RequestBody InstituicaoRequestDTO instituicaoRequestDTO) {
+        Instituicao instituicao = InstituicaoMapper.toEntity(instituicaoRequestDTO);
         Instituicao instituicaoSalva = instituicaoService.salvar(instituicao);
-        return ResponseEntity.status(HttpStatus.CREATED).body(instituicaoSalva);
+        InstituicaoResponseDTO responseDTO = InstituicaoMapper.toResponseDTO(instituicaoSalva);
+        return ResponseEntity.status(HttpStatus.CREATED).body(responseDTO);
     }
 
     @GetMapping
-    public ResponseEntity<List<Instituicao>> listarInstituicoes() {
+    public ResponseEntity<List<InstituicaoResponseDTO>> listarInstituicoes() {
         List<Instituicao> instituicoes = instituicaoService.listarTodas();
-        return ResponseEntity.ok(instituicoes);
+        List<InstituicaoResponseDTO> responseDTOs = instituicoes.stream()
+                .map(InstituicaoMapper::toResponseDTO)
+                .collect(Collectors.toList());
+        return ResponseEntity.ok(responseDTOs);
     }
 
     @GetMapping("/{id}")
-    public ResponseEntity<Instituicao> buscarPorId(@PathVariable Long id) {
+    public ResponseEntity<InstituicaoResponseDTO> buscarPorId(@PathVariable Long id) {
         Optional<Instituicao> instituicao = instituicaoService.buscarPorId(id);
-        return instituicao.map(ResponseEntity::ok)
+        return instituicao.map(inst -> ResponseEntity.ok(InstituicaoMapper.toResponseDTO(inst)))
                          .orElse(ResponseEntity.notFound().build());
     }
 
