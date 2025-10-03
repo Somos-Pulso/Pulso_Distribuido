@@ -16,19 +16,25 @@
 |                                              |          3 - Notifica todos os médicos alocados sobre seus novos plantões.                                         |
 | 4 - Visualiza escala agora publicada.        |                                                                                                                    |
 
-## Fluxo Exceção I - [Publicar escala já publicada]
+---
+
+## Fluxos Exceção
+
+### Fluxo Exceção I - [Publicar escala já publicada]
 
 | Ações do Ator | Ações do Sistema                                                                             |
 | :-----------: | :------------------------------------------------------------------------------------------: |
 |               | 2.1 - Busca escala selecionada e confere dados.                                              |
 |               | 2.2 - Exibe mensagem de erro informando que não é possível públicar uma escala já publicada. |
 
-## Fluxo Exceção II - [Publicar escala inexistente]
+### Fluxo Exceção II - [Publicar escala inexistente]
 
 | Ações do Ator | Ações do Sistema                                                                             |
 | :-----------: | :------------------------------------------------------------------------------------------: |
 |               | 2.a - Busca escala selecionada e confere dados.                                              |
 |               | 2.b - Exibe mensagem de erro informando que não foi possível encontrar a escala selecionada. |
+
+---
 
 ## Protótipo
 

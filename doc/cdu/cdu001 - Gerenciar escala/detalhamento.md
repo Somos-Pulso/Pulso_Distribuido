@@ -17,7 +17,11 @@
 |                                                                     | 5 - Se não escolheu template: cria escala com plantões vazios seguindo horários fixos da instituição.                                     |
 | 6 - Visualiza detalhamento da nova escala criada com seus plantões. |                                                                                                                                           |
 
-## Fluxo Alternativo I - [Líder quer Template]
+---
+
+## Fluxos Alternativos
+
+### Fluxo Alternativo I - [Líder quer Template]
 
 | Ações do Ator | Ações do Sistema |
 | :-----------: | :--------------: |
@@ -26,7 +30,7 @@
 | | 3.3 - Cria nova escala replicando os plantões e se tiverem, suas alocações fixas e combinadas do template, adaptadores ao mês de referência.   |
 | 3.4 - Visualiza detalhamento da nova escala criada com seus plantões com informações preenchidas. | |
 
-## Fluxo Alternativo II - [Editar dados da escala]
+### Fluxo Alternativo II - [Editar dados da escala]
 
 |                      Ações do Ator                      |                    Ações do Sistema                    |
 | :-----------------------------------------------------: | :----------------------------------------------------: |
@@ -36,7 +40,7 @@
 |                                                         | 1.4 - Sistema valida alterações e salva os novos dados. |
 
 
-## Fluxo Alternativo III - [Excluir escala]
+### Fluxo Alternativo III - [Excluir escala]
 
 |                       Ações do Ator                      |                                      Ações do Sistema                                      |
 | :------------------------------------------------------: | :----------------------------------------------------------------------------------------: |
@@ -45,7 +49,7 @@
 |                                                          |                    1.c - Remove a escala e dados oriundos dela.                             |
 | 1.d - Redirecionado para listagem de escalas.             |                                                                                            |
 
-## Fluxo Alternativo IV - [Detalhar escala]
+### Fluxo Alternativo IV - [Detalhar escala]
 
 |                       Ações do Ator                                                |                                      Ações do Sistema                                 |
 | :--------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------: |
@@ -53,7 +57,7 @@
 |                                                                                    | 1.b2 - Recupera os dados da escala, plantão, alocação e profissionais para amostragem. |
 | 1.c2 - Visualiza escala montada.                                                    |                                                                                       |
 
-## Fluxo Alternativo V - [Listar escala]
+### Fluxo Alternativo V - [Listar escala]
 
 |                       Ações do Ator        |                                      Ações do Sistema        |
 | :----------------------------------------: | :----------------------------------------------------------: |
@@ -61,14 +65,18 @@
 |                                            | 1.b3 - Recupera escalas vinculadas ao lider de escala logado. |
 | 1.c3 - Visualiza listagem de escalas.       |                                                              |
 
-## Fluxo Exceção I - [Falha na validação dos dados]
+---
+
+## Fluxos Exceção
+
+### Fluxo Exceção I - [Falha na validação dos dados]
 
 |                                    Ações do Ator                                   |                             Ações do Sistema                            |
 | :--------------------------------------------------------------------------------: | :---------------------------------------------------------------------: |
 | 0.1 - Preenche formulário de criação da escala com dados incorretos ou incompletos. |                                                                         |
 |                                                                                    | 0.2 - Exibe mensagem de erro destacando os campos inválidos ou ausentes. |
 
-## Fluxo Exceção II - [Excluir escala já publicada]
+### Fluxo Exceção II - [Excluir escala já publicada]
 
 |                                    Ações do Ator            |                             Ações do Sistema                                                 |
 | :---------------------------------------------------------: | :------------------------------------------------------------------------------------------: |
@@ -76,12 +84,14 @@
 |                                                             | 1.a.2 - Verifica se a escala ainda não foi publicada.                                         |
 |                                                             | 1.a.3 - Exibe mensagem de erro informando que não é possível excluir uma escala já publicada. |
 
-## Fluxo Exceção III - [Detalhar escala inexistente]
+### Fluxo Exceção III - [Detalhar escala inexistente]
 
 |                       Ações do Ator                                                  |                                      Ações do Sistema                                   |
 | :----------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------: |
 | 1.a2.1 - Seleciona escala específica da listagem de escalas ou plantão de referencia. |                                                                                         |
 |                                                                                      | 1.a2.2 - Exibe mensagem de erro informando que não foi possível encontrar escala.        |
+
+---
 
 ## Protótipo
 

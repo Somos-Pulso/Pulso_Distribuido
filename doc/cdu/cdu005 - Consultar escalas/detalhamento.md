@@ -13,25 +13,35 @@
 |                                    | 2 - Recupera dados da escala selecionada, plantões, alocações e profissionais para amostragem. |
 | 3 - Visualiza escala montada.      |                                                                                                |
 
-## Fluxo Alternativo I - [Detalhar escala por plantão]
+---
+
+## Fluxos Alternativos
+
+### Fluxo Alternativo I - [Detalhar escala por plantão]
 | Ações do Ator                                                        | Ações do Sistema                                                                                 |
 | :------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------: |
 | 1.1 - Seleciona "Ver escala relacionada" no detalhamento do plantão. |                                                                                                  |
 |                                                                      | 1.2 - Recupera dados da escala selecionada, plantões, alocações e profissionais para amostragem. |
 | 1.3 - Visualiza escala montada.                                      |                                                                                                  |
 
-## Fluxo Alternativo II - [Listagem de escalas]
+### Fluxo Alternativo II - [Listagem de escalas]
 | Ações do Ator                             | Ações do Sistema                                              |
 | :---------------------------------------: | :-----------------------------------------------------------: |
 | 1.a - Seleciona a opção "Minhas Escalas". |                                                               |
 |                                           | 1.b - Carrega a lista de escalas associadas ao médico logado. |
 | 1.c - Visualiza as escalas listadas.      |                                                               |
 
-## Fluxo Exceção I - [Detalhar escala inexistente]
+---
+
+## Fluxos Exceção
+
+### Fluxo Exceção I - [Detalhar escala inexistente]
 | Ações do Ator                        | Ações do Sistema                                                       |
 | :----------------------------------: | :--------------------------------------------------------------------: |
 | 1.1 - Seleciona escala de interesse. |                                                                        |
 |                                      | 1.2 - Exibe mensagem informando que não foi possível encontrar escala. |
+
+---
 
 ## Protótipo
 
