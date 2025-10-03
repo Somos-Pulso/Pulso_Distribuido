@@ -4,6 +4,7 @@ import org.springframework.stereotype.Component;
 import web.pulso.dtos.request.PessoaRequestDTO;
 import web.pulso.dtos.response.PessoaResponseDTO;
 import web.pulso.models.Pessoa;
+import web.pulso.models.Usuario;
 
 @Component
 public class PessoaMapper {
@@ -34,9 +35,9 @@ public class PessoaMapper {
         pessoa.setTelefone(requestDTO.getTelefone());
         pessoa.setFotoPerfil(requestDTO.getFotoPerfil());
 
-        // Definir apenas a referência do usuário por ID
+        // Definir a refernciaa do usuário por ID
         if (requestDTO.getUsuarioId() != null) {
-            web.pulso.models.Usuario usuario = new web.pulso.models.Usuario();
+            Usuario usuario = new Usuario();
             usuario.setId(requestDTO.getUsuarioId());
             pessoa.setUsuario(usuario);
         }

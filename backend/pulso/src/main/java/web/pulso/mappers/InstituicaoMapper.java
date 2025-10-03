@@ -3,6 +3,7 @@ package web.pulso.mappers;
 import web.pulso.dtos.request.InstituicaoRequestDTO;
 import web.pulso.dtos.response.InstituicaoResponseDTO;
 import web.pulso.models.Instituicao;
+import web.pulso.models.Usuario;
 
 public class InstituicaoMapper {
     
@@ -38,9 +39,10 @@ public class InstituicaoMapper {
         instituicao.setCnpj(dto.getCnpj());
         instituicao.setExigeVinculo(dto.getExigeVinculo());
         
-        // Definir apenas a referência do usuário por ID
+    
         if (dto.getUsuarioId() != null) {
-            web.pulso.models.Usuario usuario = new web.pulso.models.Usuario();
+
+            Usuario usuario = new Usuario();
             usuario.setId(dto.getUsuarioId());
             instituicao.setUsuario(usuario);
         }
