@@ -1,4 +1,4 @@
-# CDU012. Gerenciar Vínculos
+# CDU06. Gerenciar Vínculos
 
 - **Ator principal**: RH da Instituição  
 - **Atores secundários**: Médico, Sistema  

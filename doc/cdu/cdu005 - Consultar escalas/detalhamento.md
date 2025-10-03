@@ -24,7 +24,7 @@
 |                                                                      | 1.2 - Recupera dados da escala selecionada, plantões, alocações e profissionais para amostragem. |
 | 1.3 - Visualiza escala montada.                                      |                                                                                                  |
 
-### Fluxo Alternativo II - [Listagem de escalas]
+### Fluxo Alternativo II - [Listar escalas]
 | Ações do Ator                             | Ações do Sistema                                              |
 | :---------------------------------------: | :-----------------------------------------------------------: |
 | 1.a - Seleciona a opção "Minhas Escalas". |                                                               |
