@@ -34,6 +34,7 @@ public class Pessoa {
     @OneToOne(mappedBy = "pessoa")
     private Profissional profissional;
 
-    @OneToOne(mappedBy = "pessoa")
+    @OneToOne
+    @JoinColumn(name = "usuario_id")
     private Usuario usuario;
 }

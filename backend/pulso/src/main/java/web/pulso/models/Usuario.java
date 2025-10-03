@@ -17,9 +17,11 @@ public class Usuario {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @OneToOne
-    @JoinColumn(name = "pessoa_id", nullable = true)
+    @OneToOne(mappedBy = "usuario")
     private Pessoa pessoa;
+
+    @OneToOne(mappedBy = "usuario")
+    private Instituicao instituicao;
 
     private String matricula;
     
