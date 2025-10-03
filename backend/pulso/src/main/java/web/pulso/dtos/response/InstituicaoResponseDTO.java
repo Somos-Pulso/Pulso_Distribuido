@@ -3,7 +3,6 @@ package web.pulso.dtos.response;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.AllArgsConstructor;
-import java.util.List;
 
 @Data
 @NoArgsConstructor
@@ -18,8 +17,5 @@ public class InstituicaoResponseDTO {
     private String cnpj;
     private Boolean exigeVinculo;
     
-    // DTOs simples para evitar referências circulares
-    private List<VinculoSimpleResponseDTO> vinculos;
-    private List<SetorSimpleResponseDTO> setores;
-    private UsuarioSimpleResponseDTO usuario;
+    
 }

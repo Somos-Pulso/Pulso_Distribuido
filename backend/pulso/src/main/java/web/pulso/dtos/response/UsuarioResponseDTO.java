@@ -10,11 +10,11 @@ import java.util.Date;
 @AllArgsConstructor
 public class UsuarioResponseDTO {
     private Long id;
-    private PessoaResponseDTO pessoa;
-    private InstituicaoResponseDTO instituicao;
     private String matricula;
     private Boolean ativo;
     private Date ultimoLogin;
     private Date criadoEm;
     private Date atualizadoEm;
+    
+   
 }

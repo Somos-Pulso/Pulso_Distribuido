@@ -13,7 +13,6 @@ public class PessoaResponseDTO {
     private String email;
     private String telefone;
     private String fotoPerfil;
-    private UsuarioSimpleResponseDTO usuario;
-    private ProfissionalSimpleResponseDTO profissional;
-    private LiderEscalaSimpleResponseDTO liderEscala;
+    
+   
 }
