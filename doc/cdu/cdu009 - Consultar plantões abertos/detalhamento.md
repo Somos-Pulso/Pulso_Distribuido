@@ -18,7 +18,7 @@
 
 ---
 
-## Fluxos de Exceção
+## Fluxos Exceção
 
 ### Fluxo Exceção I - [Nenhum plantão disponível]
 | Ações do ator                    | Ações do sistema                                                |
