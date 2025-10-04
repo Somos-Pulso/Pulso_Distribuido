@@ -1,55 +1,60 @@
-# CDU00X. Gerenciar setores
+# CDU012. Gerenciar setores
 
-* **Ator principal**: RH  
-* **Atores secundários**: —  
-* **Resumo**: O RH do hospital pode criar, editar, visualizar e remover setores do hospital. Esses setores representam áreas específicas (ex.: UTI, Emergência, Pediatria, Clínica Geral) e são utilizados para organizar escalas, plantões e alocação de médicos.  
-* **Pré-condição**:  
-  - O hospital deve estar previamente cadastrado no sistema.  
-* **Pós-condição**:  
-  - O setor estará cadastrado (ou atualizado/removido) e poderá ser utilizado nos plantões, escalas e outras funcionalidades do sistema.  
+* **Ator principal**: RH da instituição 
+* **Atores secundários**: Sistema
+* **Resumo**: O RH do hospital pode criar, editar, visualizar e remover setores do hospital. Esses setores representam áreas físicas específicas dentro das especialidades da instituição e são utilizados para organizar escalas, plantões e alocação de médicos.  
+* **Pré-condição**: O hospital deve estar previamente cadastrado no sistema junto com suas especialidades.  
+* **Pós-condição**: O setor estará cadastrado (ou atualizado/removido) e poderá ser utilizado nos plantões, escalas e outras funcionalidades do sistema.  
 
-### Fluxo Principal
+## Fluxo Principal
 
-| Ações do RH                                                        | Ações do Sistema                                                                                                        |
-| ------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------- |
-| **1 - Seleciona** a opção "Setores" no menu administrativo do hospital |                                                                                                                         |
-|                                                                    | **2 - O sistema exibe** a lista de setores já cadastrados no hospital, com opções para criar, editar ou remover registros |
-| **3 - Escolhe** a ação "Criar setor"                               |                                                                                                                         |
-|                                                                    | **4 - O sistema exibe** formulário solicitando: nome do setor, descrição e status (ativo/inativo).                       |
-| **5 - Preenche** as informações e confirma                         |                                                                                                                         |
-|                                                                    | **6 - O sistema salva** o setor e atualiza a lista exibindo o novo registro.                                             |
+| Ações do Ator                                                                      | Ações do Sistema                                                     |
+| ---------------------------------------------------------------------------------- | -------------------------------------------------------------------- |
+| 1 - Seleciona a opção "Adicionar novo setor".                                      |                                                                      |
+|                                                                                    | 2 - Exibe formulário de criação de um novo setor.                    |
+| 3 - Informa nome do setor e a qual especialidade do hospital ele está relacionado. |                                                                      |
+|                                                                                    | 4 - Valida entradas e cria novo setor com as informações fornecidas. |
 
 ---
 
-### Fluxo Alternativo FA1 - Editar setor
+## Fluxos Alternativos
 
-| Ações do RH                                        | Ações do Sistema                                      |
-| -------------------------------------------------- | ----------------------------------------------------- |
-| **1 - Seleciona** um setor já cadastrado           |                                                       |
-|                                                    | **2 - O sistema exibe** formulário com os dados atuais |
-| **3 - Edita** as informações desejadas e confirma  |                                                       |
-|                                                    | **4 - O sistema atualiza** o setor na lista            |
+### Fluxo Alternativo I - [Atualizar setor]
+
+| Ações do Ator                                           | Ações do Sistema                                            |
+| ------------------------------------------------------- | ----------------------------------------------------------- |
+| 1.1 - Seleciona opção de atualizar em setor específico. |                                                             |
+|                                                         | 1.2 - Exibe formulário com os dados atuais.                 |
+| 1.3 - Edita as informações desejadas e confirma.        |                                                             |
+|                                                         | 1.4 - Valida entradas, procura setor e o atualiza na lista. |
+
+### Fluxo Alternativo II - [Excluir setor]
+
+| Ações do Ator                                                          | Ações do Sistema                                |
+| ---------------------------------------------------------------------- | ----------------------------------------------- |
+| 1.a - Seleciona opção de excluir em um setor específico.               |                                                 |
+|                                                                        | 1.b - Procura setor e o apaga da base de dados. |
+
+### Fluxo Alternativo III - [Listar setores]
+
+| Ações do Ator                             | Ações do Sistema                                                           |
+| ----------------------------------------- | -------------------------------------------------------------------------- |
+| 1.aa - Seleciona opção de "Meus setores". |                                                                            |
+|                                           | 1.ab - Procura instituição logada e resgata seus setores e especialidades. |
 
 ---
 
-### Fluxo Alternativo FA2 - Remover setor
+## Fluxos Exceção 
 
-| Ações do RH                                        | Ações do Sistema                                        |
-| -------------------------------------------------- | ------------------------------------------------------- |
-| **1 - Seleciona** um setor da lista                |                                                         |
-|                                                    | **2 - O sistema solicita** confirmação da remoção        |
-| **3 - Confirma** a exclusão                        |                                                         |
-|                                                    | **4 - O sistema remove** o setor e atualiza a lista      |
+### Fluxo Exceção I - [Acessar setor não inexistente]
 
----
+| Ações do Ator                                | Ações do Sistema                                                                            |
+| -------------------------------------------- | ------------------------------------------------------------------------------------------- |
+| 1.1.1 - Seleciona ação em setor inexistente. |                                                                                             |
+|                                              | 1.1.2 - Exibe mensagem de erro informando que não foi possível encontrar setor selecionado. |
 
 ## Protótipo
 
-
-> Obs. as seções a seguir apenas serão utilizadas na segunda unidade do PDSWeb (segundo orientações do gerente do projeto).
-
 ## Diagrama de Interação (Sequência ou Comunicação)
 
-
 ## Diagrama de Classes de Projeto
-
