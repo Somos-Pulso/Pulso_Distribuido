@@ -13,12 +13,12 @@ Este documento descreve o funcionamento geral do sistema, suas entidades e a rel
 - **Entidades Envolvidas:** `Instituição`, `Médico`, `Líder de Escala`, `Vínculo`.
 - **Justificativa:** Essencial para determinar quais profissionais estão associados à instituição, garantindo que apenas pessoas autorizadas possam atuar nas escalas e setores correspondentes.
 
-#### CDU011 – Cadastrar Líderes de Escala [🗂️](../cdu/cdu011_Cadastrar_líderes_de_escala/detalhamento.md)
+#### CDU010 – Cadastrar Líderes de Escala [🗂️](../cdu/cdu010_Cadastrar_líderes_de_escala/detalhamento.md)
 - **Descrição:** Permite o cadastro de líderes de escala, que podem já possuir perfil de médico ou serem criados como novos usuários.
 - **Entidades Envolvidas:** `Usuário`, `Pessoa`, `Líder de Escala`, `Instituição`.
 - **Justificativa:** Garante que cada instituição tenha líderes habilitados a gerenciar suas escalas, mesmo que estes não possuam vínculo prévio como médico.
 
-#### CDU012 – Gerenciar Setores [🗂️](../cdu/cdu012_Gerenciar_setores/detalhamento.md)
+#### CDU011 – Gerenciar Setores [🗂️](../cdu/cdu011_Gerenciar_setores/detalhamento.md)
 - **Descrição:** Permite ao RH criar, atualizar, excluir e listar setores da instituição, cada um associado a uma especialidade específica.
 - **Entidades Envolvidas:** `Instituição`, `Setor`, `Especialidade`.
 - **Justificativa:** Organiza a estrutura interna da instituição, separando os setores conforme as especialidades oferecidas, o que reflete diretamente na criação de escalas por área.
@@ -70,12 +70,12 @@ Este documento descreve o funcionamento geral do sistema, suas entidades e a rel
 - **Entidades Envolvidas:** `Alocação`, `Plantão`, `Médico`, `Troca`.
 - **Justificativa:** Viabiliza a autoalocação e as trocas, garantindo flexibilidade e cobertura contínua dos turnos.
 
-#### CDU013 – Gerenciar Trocas e Repasses de Plantão [🗂️](../cdu/cdu013_Gerenciar_trocas_e_repasses_de_plantão/detalhamento.md)
+#### CDU012 – Gerenciar Trocas e Repasses de Plantão [🗂️](../cdu/cdu012_Gerenciar_trocas_e_repasses_de_plantão/detalhamento.md)
 - **Descrição:** Permite criar, atualizar, detalhar e excluir trocas de plantões entre médicos, diferenciando trocas diretas e repasses.
 - **Entidades Envolvidas:** `Troca`, `Plantão`, `Médico`, `Alocação`.
 - **Justificativa:** Favorece a autonomia entre os profissionais, permitindo reorganizações e compensações sem necessidade de intervenção administrativa.
 
-#### CDU014 – Responder Solicitação de Troca [🗂️](../cdu/cdu013_Gerenciar_trocas_e_repasses_de_plantão/detalhamento.md)
+#### CDU013 – Responder Solicitação de Troca [🗂️](../cdu/cdu013_Responder_solicitação_de_troca/detalhamento.md)
 - **Descrição:** Permite ao médico receptor aceitar ou recusar uma troca de plantão proposta.
 - **Entidades Envolvidas:** `Troca`, `Plantão`, `Alocação`, `Médico`.
 - **Justificativa:** Estabelece controle sobre o aceite de trocas e mantém a rastreabilidade das alterações de escala.
@@ -98,8 +98,8 @@ Este documento descreve o funcionamento geral do sistema, suas entidades e a rel
 | CDU    | Caso de Uso                      | Entidades Relacionadas                                          |
 |--------|----------------------------------|-----------------------------------------------------------------|
 | CDU006 | Gerenciar Vínculos               | Instituição, Médico, Líder de Escala, Vínculo                   |
-| CDU011 | Cadastrar Líderes de Escala      | Usuário, Pessoa, Líder de Escala, Instituição                   |
-| CDU012 | Gerenciar Setores                | Instituição, Setor, Especialidade                               |
+| CDU010 | Cadastrar Líderes de Escala      | Usuário, Pessoa, Líder de Escala, Instituição                   |
+| CDU011 | Gerenciar Setores                | Instituição, Setor, Especialidade                               |
 | CDU001 | Gerenciar Escala                 | Escala, Setor, Plantão, Líder de Escala, Alocação, Profissional |
 | CDU002 | Gerenciar Plantão                | Plantão, Escala, Alocação, Profisssional                        |
 | CDU003 | Publicar Escala                  | Escala                                                          |
@@ -107,8 +107,8 @@ Este documento descreve o funcionamento geral do sistema, suas entidades e a rel
 | CDU007 | Consultar Plantões               | Plantão, Alocação, Troca, Profissional, Líder de Escala         |
 | CDU009 | Consultar Plantões Abertos       | Plantão, Escala, Troca, Profissional, Líder de Escala, Alocação |
 | CDU008 | Pegar Plantão                    | Alocação, Plantão, Profissional, Troca                          |
-| CDU013 | Gerenciar Trocas e Repasses      | Troca, Plantão, Profissional, Alocação                          |
-| CDU014 | Responder Solicitação de Troca   | Troca, Plantão, Alocação, Profissional                          |
+| CDU012 | Gerenciar Trocas e Repasses      | Troca, Plantão, Profissional, Alocação                          |
+| CDU013 | Responder Solicitação de Troca   | Troca, Plantão, Alocação, Profissional                          |
 | CDU004 | Consultar Notificações e Alertas | Notificação, Usuário                                            |
 
 ---
