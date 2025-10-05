@@ -5,7 +5,7 @@
 
 ## 2. Listagem dos detalhamentos dos casos de uso
 
-1. [CDU-001 - Gerenciar Escala](cdu001/detalhamento.md)
+1. [CDU-001 - Gerenciar Escala](cdu001_Gerenciar_escala/detalhamento.md)
 2. [CDU-002 - Gerenciar Plantão](cdu002/detalhamento.md)
 3. [CDU-003 - Publicar Escala](cdu003/detalhamento.md)
 4. [CDU-004 - Consultar Notificações e Alertas](cdu004/detalhamento.md)
