@@ -1,7 +1,7 @@
 # Modelo de Casos de Uso
 
 ## 1. Diagrama de Casos de Uso
-<img width="2325" height="1449" alt="Caso de Uso" src="https://github.com/user-attachments/assets/fb8924ce-792f-4ff1-827b-baa5ba92b5b0" />
+<img width="2325" height="1449" alt="Caso de Uso" src="https://github.com/user-attachments/assets/d91c5037-c6c9-48c5-9d08-2ea848b19e95" />
 
 ## 2. Listagem dos detalhamentos dos casos de uso
 
