@@ -1,3 +1,3 @@
 # Modelo de Implantação
 
-<img width="1632" height="762" alt="implantacao" src="https://github.com/user-attachments/assets/8bbb6270-7b35-46ab-b960-8988a7b3ae28" />
+<img width="1632" height="782" alt="implantacao" src="https://github.com/user-attachments/assets/be7634ae-d68a-40ca-b439-7f75ba667be9" />
