@@ -1,10 +1,10 @@
 # Modelo de Dados
 
 ## Diagrama ER
-<img width="2333" height="1123" alt="pulsodistribuido drawio (4)" src="https://github.com/user-attachments/assets/4eee7fc8-f31e-43be-a8d8-66d56654451c" />
+<img width="2333" height="1123" alt="pulsodistribuido drawio (7)" src="https://github.com/user-attachments/assets/78d21889-2dcb-43dc-9cd6-154a3a116246" />
 
 ## Modelo Relacional
-<img width="6276" height="2892" alt="erdplus (7)" src="https://github.com/user-attachments/assets/ed5d29e7-eea2-4238-8ed7-7c657c98b188" />
+<img width="6276" height="2892" alt="erdplus (8)" src="https://github.com/user-attachments/assets/3d0880f6-70ad-43ae-8304-1f769514598e" />
 
 ## Dicionário de Dados
 
@@ -49,6 +49,7 @@
 | id_lider_escala    | Identificador único do lider de escala       | \[int]       |         | ☐    | ☑  | ☐  | ☐      | ☑        |         | Not null |
 | id_usuario         | Chave ligando lider de escala ao seu usuário | \[int]       |         | ☐    | ☐  | ☑  | ☐      | ☐        |         | Not null |
 | id_vinculo         | Chave ligando líder de escala ao seu vínculo | \[int]       |         | ☐    | ☐  | ☑  | ☐      | ☐        |         | Not null |
+| id_formação        | Chave ligando líder de escala a sua formação | \[int]       |         | ☐    | ☐  | ☑  | ☐      | ☐        |         | Not null |
 
 ---
 
@@ -65,6 +66,7 @@
 | crm                | CRM do profissional                                 | \[varchar]   | 8       | ☐    | ☐  | ☐  | ☐      | ☐        |         | Not null |
 | data_nasc          | Data guardando a data de nascimento do profissional | \[timestamp] |         | ☐    | ☐  | ☐  | ☐      | ☐        |         | Not null |
 | id_usuario         | Chave ligando profissional ao seu usuário           | \[int]       |         | ☐    | ☐  | ☑  | ☐      | ☐        |         | Not null |
+| id_Formação        | Chave ligando profissional a sua formação           | \[int]       |         | ☐    | ☐  | ☑  | ☐      | ☐        |         | Not null |
 
 ---
 
@@ -86,14 +88,14 @@
 
 ---
 
-### Tabela: Especialidade
+### Tabela: Formação
 
-**Descrição** : Representa áreas de atuação médica, podendo estar ligadas a profissionais e a instituições.
+**Descrição** : Representa o vínculo entre profissionais e líderes de escala às especialidades de sua formação.
 
-| Colunas            | Descrição                            | Tipo de Dado | Tamanho | Null | PK | FK | Unique | Identity | Default | Check    |
-| ------------------ | ------------------------------------ | ------------ | ------- | ---- | -- | -- | ------ | -------- | ------- | -------- |
-| id_especialidade   | Identificador único da especialidade | \[int]       |         | ☐    | ☑  | ☐  | ☐      | ☑        |         | Not null |
-| nome               | Nome específico da especialidade     | \[varchar]   | 100     | ☐    | ☐  | ☐  | ☑      | ☐        |         | Not null |
+| Colunas            | Descrição                               | Tipo de Dado     | Tamanho | Null | PK | FK | Unique | Identity | Default | Check    |
+| ------------------ | --------------------------------------- | ---------------- | ------- | ---- | -- | -- | ------ | -------- | ------- | -------- |
+| id_formacao   | Identificador único da especialidade         | \[int]           |         | ☐    | ☑  | ☐  | ☐      | ☑        |         | Not null |
+| especialidade | A qual especialidade essa formação se refere | \[Especialidade] |         | ☐    | ☐  | ☐  | ☐      | ☐        |         | Not null |
 
 ---
 
@@ -101,12 +103,12 @@
 
 **Descrição** : Representa divisões internas de uma instituição dentro de uma especialidade, utilizadas para organização de escalas e plantões.
 
-| Colunas            | Descrição                               | Tipo de Dado | Tamanho | Null | PK | FK | Unique | Identity | Default | Check    |
-| ------------------ | --------------------------------------- | ------------ | ------- | ---- | -- | -- | ------ | -------- | ------- | -------- |
-| id_setor           | Identificador único do setor            | \[int]       |         | ☐    | ☑  | ☐  | ☐      | ☑        |         | Not null |
-| nome               | Nome do setor em questão                | \[varchar]   | 100     | ☐    | ☐  | ☐  | ☐      | ☐        |         | Not null |
-| id_instituicao     | Chave ligando setor a sua instituição   | \[int]       |         | ☐    | ☐  | ☑  | ☐      | ☐        |         | Not null |
-| id_especialidade   | Chave ligando setor a sua especialidade | \[int]       |         | ☐    | ☐  | ☑  | ☐      | ☐        |         | Not null |
+| Colunas            | Descrição                                 | Tipo de Dado     | Tamanho | Null | PK | FK | Unique | Identity | Default | Check    |
+| ------------------ | ----------------------------------------- | ---------------- | ------- | ---- | -- | -- | ------ | -------- | ------- | -------- |
+| id_setor           | Identificador único do setor              | \[int]           |         | ☐    | ☑  | ☐  | ☐      | ☑        |         | Not null |
+| nome               | Nome do setor em questão                  | \[varchar]       | 100     | ☐    | ☐  | ☐  | ☐      | ☐        |         | Not null |
+| especialidade      | A qual especialidade esse setor se refere | \[Especialidade] |         | ☐    | ☐  | ☐  | ☐      | ☐        |         | Not null |
+| id_instituicao     | Chave ligando setor a sua instituição     | \[int]           |         | ☐    | ☐  | ☑  | ☐      | ☐        |         | Not null |
 
 ---
 
